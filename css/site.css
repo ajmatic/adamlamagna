@@ -1,0 +1,116 @@
+body {
+	
+	background-color: rgba(238, 238, 238, .75);
+}
+
+#header {
+	top: 0;
+	right: 1.2rem;
+	left: 1.2rem;
+	position: fixed;
+	background: rgba(238, 238, 238, 1);
+	border-bottom: 0.063rem solid;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+h1 {
+	font-size: 4rem;
+	font-family: 'Baumans', cursive;
+	text-align: center;
+	padding-top: .5rem;
+	color: #636359;
+	text-shadow: .125rem .125rem 0 #8A0000;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #636359;
+}
+
+h2 {
+	font-size: 2rem;
+	font-family: 'Baumans', cursive;
+	color: #636359;
+	text-shadow: .0625rem .0625rem 0 #8A0000;
+	text-align: center;
+	padding-top: .8rem;
+}
+
+#section  {
+	width: 70%;
+	text-align: justify;
+	margin: 0 auto;
+	margin-top: 12.5rem;
+	display: block;
+}
+
+#section h1 {
+	padding-bottom: 1rem;
+	font-size: 3rem;
+	text-shadow: 0 0 0 #636359;
+}
+
+#section p {
+	font-family: Georgia, Times, Serif;
+	font-size: 1.4rem;
+	color: #313121;
+	line-height: 1.75rem;
+}
+
+#nav a {
+	text-decoration: none;
+	color: #8A0000;
+	vertical-align: top;
+}
+
+#nav a:hover {
+	color: #8A0000;
+}
+
+#nav li {
+	display: inline;
+	vertical-align: top;
+}
+
+#nav ul {
+	text-align: center;
+	padding-top: 1.25rem;
+	word-spacing: .6rem;
+	font-size: 1.25rem;
+}
+
+.contact {
+	text-align: center;
+}
+
+
+#port li {
+	font-size: 1.6rem;
+	text-indent: -2rem;
+}
+
+#port a {
+	color: #8A0000;
+	text-decoration: none;
+}
+
+#port a:hover {
+	color: #636359;
+}
+
+#gray li a {
+	background-color: #636359;
+	width: 5rem;
+	padding: .25rem .5rem;
+	display: inline-block;
+	color: white;
+}
+
+
+
+
+
+
+
+

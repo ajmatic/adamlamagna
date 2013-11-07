@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Adam Lamagna</title>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link rel="stylesheet" href="/trollslayer/css/troll.css" />
+		<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+	</head>
+	<body onload="beginGame()">
+		<div>
+			
+			<script type="text/javascript">
+				var beginGame = function() {
+					var user = prompt("You are walking through the woods on a gloomy day and you come to a split in the path. Which way would you like to go? (right, left, or stay put)").toLowerCase();
+
+						switch(user) {
+						    case 'right':
+						        var rock = prompt("You are now going right and you encounter a steep rock. Would you like to climb it? (yes or no)").toLowerCase();
+						        var climber = prompt("Are you a skilled rock climber?").toLowerCase();
+						        if (rock === 'yes' && climber === 'yes') {
+						            alert("You climb the rock and your reward is a beautiful view of a valley with forest all around!! Nice job, climber!!");
+						        } else {
+						            alert("You should really be a skilled climber to attempt this feat. Just head back down the path and get some rock climbing lessons!!")
+						        }
+						        break;
+						    case 'left':
+						        var troll = prompt("You are now going left and you encounter a horrible troll, do you want to fight him? (yes or no)").toLowerCase();
+						        var fight = prompt("Are you a skilled troll slayer?").toLowerCase();
+						        if (troll === 'yes' && fight === 'yes') {
+						            alert("You fight the troll and after a lengthy battle you overpower the evil creature! Your reward is being the king of the forest!!!");
+						        } else {
+						            alert("The troll chases after you and he senses any weakness. You cannot fight him off and you now become a troll yourself, oh no!!!");
+						        }
+						        break;
+						    case 'stay put':
+						        alert("Ok, don't go anywhere, but you won't have much fun if you just want to stand at the fork in the road. You should always choose a path!");
+						        break;
+						    default:
+						        alert("I have no idea what that means!!! You can't play!");
+						}
+				}
+
+			</script>
+		</div>
+
+	</body>
