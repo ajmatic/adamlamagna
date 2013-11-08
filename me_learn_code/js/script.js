@@ -7,3 +7,9 @@ $(document).ready(function(){
     $('.list').append("<div class='item'>" + toAdd +"</div>");
     });
 });
+
+$(document).ready(function(){
+    $('#ball').click(function(){
+        $(this).effect('explode');
+    });
+});

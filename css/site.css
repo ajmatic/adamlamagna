@@ -28,6 +28,7 @@ h1 a {
 	color: #636359;
 }
 
+
 h2 {
 	font-size: 2rem;
 	font-family: 'Baumans', cursive;
@@ -42,6 +43,7 @@ h2 {
 	text-align: justify;
 	margin: 0 auto;
 	margin-top: 12.5rem;
+	padding-top: 1rem;
 	display: block;
 }
 

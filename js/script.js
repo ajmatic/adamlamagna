@@ -10,3 +10,12 @@ $(document).ready(function() {
        }); 
    });
 });
+
+$(document).ready(function(){
+    $('#title').mouseenter(function(){
+        $('#title').fadeTo('fast', .5);
+    });
+    $('#title').mouseleave(function(){
+        $('#title').fadeTo('fast', 1);
+    });
+});
