@@ -12,10 +12,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-    $('#title').mouseenter(function(){
-        $('#title').fadeTo('fast', .5);
+    $('#title h1 a').mouseenter(function(){
+        $('#title h1 a').fadeTo('slow', .4);
     });
-    $('#title').mouseleave(function(){
-        $('#title').fadeTo('fast', 1);
+    $('#title h1 a').mouseleave(function(){
+        $('#title h1 a').fadeTo('fast', 1);
     });
 });
