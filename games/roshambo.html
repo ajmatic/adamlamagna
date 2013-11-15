@@ -18,7 +18,7 @@
 		<div class="block" id="scissors">
 			<img src="../img/scissor.jpg" alt="scissor">
 		</div><br><br><br><br><br><br><br><br><br>		
-		<div id="tie, nobody">
+		<div id="tie">
 			<p></p>
 		</div>
 		
@@ -37,7 +37,7 @@
 
 			var compare = function(choice1, choice2) {
 			    if (choice1 == choice2) {
-			        return "tie, nobody";
+			        return "tie";
 			    }
 			    if (choice1 == "rock") {
 			        if(choice2 == "scissors"){
@@ -69,7 +69,8 @@
 				var answer = compare(userChoice,computerChoice);
 	    		var div = document.getElementById(answer);
 				var content = div.innerHTML;
-				div.innerHTML = content + answer + " wins"; 
+				var verb = answer == "tie" ? ", nobody wins" : " wins";
+				div.innerHTML = content + answer + verb; 
 
 			
 				
