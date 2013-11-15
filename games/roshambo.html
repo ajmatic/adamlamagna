@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>roshambo</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/roshambo.css">
+		<link href='http://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body onload="beginGame()">
+		<div class="block" id="rock">
+			<img src="../img/rock.jpg" alt="rock">
+		</div>
+		<div class="block" id="paper">	
+			<img src="../img/paper.jpg" alt="paper">
+		</div>
+		<div class="block" id="scissors">
+			<img src="../img/scissor.jpg" alt="scissor">
+		</div><br><br><br><br><br><br><br><br><br>		
+		<div id="tie, nobody">
+			<p></p>
+		</div>
+		
+		<script type="text/javascript">
+		var beginGame = function(){
+			var userChoice = prompt("Do you choose rock, paper or scissors?");
+			var computerChoice = Math.random();
+			if (computerChoice < 0.34) {
+				computerChoice = "rock";
+			} else if(computerChoice <= 0.67) {
+				computerChoice = "paper";
+			} else {
+				computerChoice = "scissors";
+			}
+
+
+			var compare = function(choice1, choice2) {
+			    if (choice1 == choice2) {
+			        return "tie, nobody";
+			    }
+			    if (choice1 == "rock") {
+			        if(choice2 == "scissors"){
+			        return "rock";
+			        } else {
+			            return "paper";
+			        }
+			    }
+			    
+			    if (choice1 == "paper") {
+			        if (choice2 == "scissors"){
+			            return "scissors";
+			        } else {
+			            return "paper";
+			        }
+			    }
+			    
+			    if (choice1 == "scissors") {
+			        if (choice2 == "rock") {
+			            return "rock";
+			        } else {
+			            return "scissors";
+			        }
+			    }
+			    
+
+			};
+				
+				var answer = compare(userChoice,computerChoice);
+	    		var div = document.getElementById(answer);
+				var content = div.innerHTML;
+				div.innerHTML = content + answer + " wins"; 
+
+			
+				
+			
+		};
+		
+
+
+    	</script>
+
+    		
+	</body>
+
+
+
+
+
+</html>

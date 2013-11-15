@@ -1,0 +1,10 @@
+.block {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+}
+
+.block img {
+	width: 16rem;
+	height: 12rem;
+}
