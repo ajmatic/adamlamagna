@@ -25,12 +25,7 @@ h1 a {
 	text-decoration: none;
 }
 
-#date {
-	background-color: blue;
-	float: left;
-	margin-left: -10.4947526%;
-	width: 19.04048%;
-}
+
 
 .lede {
 	padding: 0.8em 5.33333333%;
@@ -42,6 +37,7 @@ h1 a {
 	height: 52.032252%;
 	background-color: #B26B00;
 	font-size: 2em;
+	color: #4C4C33;
 }
 
 .blog .other {
@@ -50,6 +46,7 @@ h1 a {
 	height: 25.09939%;
 	background-color: #B26B00;
 	font-size: 2em;
+	color: #4C4C33;
 }
 
 #thumb {
