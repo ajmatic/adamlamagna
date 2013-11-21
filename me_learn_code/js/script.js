@@ -1,15 +1,18 @@
 $(document).ready(function(){
-    $('#button').click(function(){
-        $(document).on('click', '.item', function() {
-        $(this).remove();
-        });
-    var toAdd = $('input[name=checkListItem]').val();
-    $('.list').append("<div class='item'>" + toAdd +"</div>");
+
+    $('#toDo').on('submit', function(e){
+        e.preventDefault();
+        var toAdd = $('input[name=checkListItem]').val();
+        $('.list').append("<li class='item' title='click to remove'>" + toAdd +"</li>");
+        $('input[name=checkListItem]').val("");
+
     });
+
+    $(document).on('click', '.item', function() {
+        $(this).remove();
+    });
+
+    
+
 });
 
-$(document).ready(function(){
-    $('#ball').click(function(){
-        $(this).effect('explode');
-    });
-});

@@ -21,6 +21,8 @@ h6 {
 
 h2 {
     font-family:arial;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 form {
@@ -29,7 +31,7 @@ form {
 
 #button{
     display: inline-block;
-    height:20px;
+    height:30px;
 	width:70px;
 	background-color:#cc0000;
 	font-family:arial;
@@ -45,9 +47,8 @@ form {
 	color:#cc0000;
 }
 
-#ball {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    background-color: #008800;
+.list li {
+	cursor: pointer;
+	line-height: 30px;
 }
+
