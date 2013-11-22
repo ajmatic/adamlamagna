@@ -2,11 +2,72 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>me_learn_code: Daily
-		</title>
+		<title>Input</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" href="css/site.css" />
+		<link rel="stylesheet" href="css/input.css" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="js/script.js"></script>
-		
+		<script type="text/javascript" src="js/script2.js"></script>
 	</head>
+
+	<body>
+		<form action="">
+			<fieldset>
+				<label>
+					Please type your name here
+				</label>
+				<input type="text" id="txtName" />
+				<button type="button" onclick="sayHi()">
+					<div class="tx">
+						Click Me!!!
+					</div>
+				</button>
+
+			</fieldset>
+		</form>
+		<div id="divOutput">
+			Watch this space!
+		</div><br><br><br>
+
+		<form action="">
+			<fieldset>
+				<label>
+					Please type your age:
+				</label>
+				<input type="integer" id="txtAge" />
+				<button type="button" onclick="sayAge()">
+					<div class="tx">
+						Click Me!!
+					</div>
+				</button>
+			</fieldset>
+		</form>
+		<div id="divAge">
+			Now watch this space!!
+		</div>
+
+		<script type="text/javascript">
+			function sayHi(){
+				txtName = document.getElementById("txtName");
+				divOutput = document.getElementById("divOutput");
+				name = txtName.value;
+
+				divOutput.innerHTML = name;
+				divOutput.innerHTML += " is a very nice name!";
+			}
+
+			function sayAge(){
+				age = document.getElementById("txtAge");
+				divAge = document.getElementById("divAge");
+				age = txtAge.value;
+				if (age >= 30) {
+					var str = "  - wow, you are getting up there.....just kidding!";
+				} else {
+					var str = " - that is still young!"
+				}
+
+				divAge.innerHTML = age;
+				divAge.innerHTML += str;
+			}
+		</script>
+	</body>
+</html>

@@ -5,3 +5,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#game {
+	font-size: 3rem;
+	color: white;
+}
