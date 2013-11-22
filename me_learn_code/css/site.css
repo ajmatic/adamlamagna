@@ -14,9 +14,13 @@ h6 {
 	padding-top: .75rem;
 }
 
-#clock h4 {
+#clock2 h4 {
 	padding-top: 1.5rem;
 	padding-left: .75rem;
+}
+
+#clock1 {
+	font-size: 1.75rem;
 }
 
 h2 {

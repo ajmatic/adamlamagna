@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>me_learn_code: Daily
-		</title>
+		<title>The Clock</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" href="css/site.css" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css'>
@@ -12,9 +11,12 @@
 	</head>
 	<body>
 		<div id="title">
-			<h1>Learning Code: Daily</h1>
+			<h1>The Clock-</h1>
+			<div id="clock1">
+				<h2>This is the current time:</h2>
+			</div>
 		</div>
-		<div id="clock">
+		<div id="clock2">
 			<h4>It is now <span id="date"></span></h4>
 		</div>
 
@@ -44,6 +46,8 @@
 			var slot = document.getElementById("date");
 			slot.innerHTML = string;	
 		</script>
+
+		<img src="img/Clock.gif" id="clock" alt="clock">
 	</body>
 
 </html>
