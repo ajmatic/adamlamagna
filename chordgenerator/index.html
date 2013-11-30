@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Adam Lamagna</title>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link rel="stylesheet" href="/chordgenerator/css/site.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var chordSound;
+		var progressions = {};
+		var randomizeCount = 0;
+		
+		progressions.alternative = new Array (6, 4, 1, 5);
+		progressions.canon = new Array (1,5,6,3,4,1,4,5);
+		progressions.cliche = new Array (1, 5, 6, 4);
+		progressions.cliche2 = new Array (1, 6, 3, 7);
+		progressions.creepy = new Array (1, 6, 4, 5);
+		progressions.creepy2 = new Array (1, 6, 2, 5);
+		progressions.endless = new Array (1, 6, 2, 4);
+		progressions.energetic = new Array (1, 3, 4, 6);
+		progressions.grungy = new Array (1, 4, 3, 6);
+		progressions.memories = new Array (1, 4, 1, 5);
+		progressions.rebellious = new Array (4, 1, 4, 5);
+		progressions.sad = new Array (1, 4, 5, 5);
+		progressions.simple = new Array (1, 4);
+		progressions.simple2 = new Array (1, 5);
+		progressions.twelvebarblues = new Array (1, 1, 1, 1, 4, 4, 1, 1, 5, 4, 1, 5);
+		progressions.wistful = new Array (1, 1, 4, 6);
+		
+		var audioIsSupported;
+
+		var notesWithSharps = new Array(
+			"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"
+		);
+		
+		var currentKey = "";
+		var currentMajMin = "";
+		
+		// Usage: getChords("A#", "min");
+		function getChords(key, majMin) {
+			var notesStartingAtKey = notesWithStartPoint(key, notesWithSharps);
+			var notesInKey = new Array();
+			var steps, majMin;9
+			if (majMin == "maj") {
+				steps = new Array(0, 2, 4, 5, 7, 9, 11);
+				majMin = new Array("", "m", "m", "", "", "m", "dim");
+			}
+			else if (majMin == "min") {
+				steps = new Array(0, 2, 3, 5, 7, 8, 10);
+				majMin = new Array("m", "dim", "", "m", "m", "", "");
+			}
+			else if (majMin == "lydian") {
+				steps = new Array(0, 2, 4, 6, 7, 9, 11);
+				majMin = new Array("", "", "m", "dim", "", "m", "m");
+			}
+			else if (majMin == "phrygian") {
+				steps = new Array(0, 1, 3, 5, 7, 8, 10);
+				majMin = new Array("m", "", "", "m", "dim", "", "m");
+			}
+			else {
+				return;
+			}
+			
+			for (var i = 0; i < steps.length; i++) {
+				var thisStep = steps[i];
+				var thisNote = notesStartingAtKey[thisStep];
+				var thisMajMin = majMin[i];
+				notesInKey.push(thisNote + thisMajMin);
+			}
+			return notesInKey;
+		}
+		</script>
+		<div id="header-holder">
+		<div id="logo"></div>
+		<div class="container">
+			<div class="row">
+				<div id="pageHeading" class="sixteen columns">
+					<h1>AutoChords</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div id="feel-and-key" class="one-third column">
+				<h3>Feel and Key</h3>
+				<div>
+					<label for="moodSelect">I want to play...</label>
+					<select id="moodSelect" onchange="paramChanged()">
+						<option value="alternative">Alternative</option>
+						<option value="canon">Rock</option>
+						<option value="cliche">Clich&eacute;</option>
+						<option value="cliche2">Clich&eacute; 2</option>
+						<option value="creepy">Creepy Stuff</option>
+						<option value="creepy2">Creepy Stuff 2</option>
+						<option value="endless">Endless</option>
+						<option value="energetic">Energetic</option>
+						<option value="grungy">Grungy</option>
+						<option value="memories">Memories</option>
+						<option value="rebellious">Rebellious</option>
+						<option value="sad">Sad Ballad</option>
+						<option value="simple">Simple</option>
+						<option value="simple2">Simple 2</option>
+						<option value="twelvebarblues">Twelve Bar Blues</option>
+						<option value="wistful">Wistful Ballad</option>
+					</select>
+				</div>
+				<div>
+					<label>in the key of...</label>
+					<select id="keySelect" onchange="paramChanged()">
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="D">D</option>
+						<option value="E">E</option>
+						<option value="F">F</option>
+						<option value="G">G</option>
+					</select>
+				
+				</div>
+			</div>
+	</body>
+</html>
