@@ -1,4 +1,41 @@
-h1 {
-	font-size: 4rem;
-	font-weight: bold;
+body {
+	margin: 2rem;
 }
+
+h1 {
+	font-weight: bold;
+	font-size: 3rem;
+	font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+#section label {
+	font-size: 2rem;
+}
+
+#article label {
+	font-size: 2rem;
+}
+
+#keySelect {
+	font-size: 1.5rem;
+}
+
+#playSelect {
+	font-size: 1.5rem;
+	font-variant: small-caps;
+}
+
+button {
+	font-size: 1.5rem;
+	font-variant: small-caps;
+
+}
+
+#output {
+	font-family: 'Wellfleet', cursive;
+	font-size: 2rem;
+	background-color: gray;
+}
+
+

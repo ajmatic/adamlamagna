@@ -5,123 +5,97 @@
 		<title>Adam Lamagna</title>
 		<link rel="stylesheet" type="text/css" href="/css/reset.css">
 		<link rel="stylesheet" href="/chordgenerator/css/site.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-		var chordSound;
-		var progressions = {};
-		var randomizeCount = 0;
 		
-		progressions.alternative = new Array (6, 4, 1, 5);
-		progressions.canon = new Array (1,5,6,3,4,1,4,5);
-		progressions.cliche = new Array (1, 5, 6, 4);
-		progressions.cliche2 = new Array (1, 6, 3, 7);
-		progressions.creepy = new Array (1, 6, 4, 5);
-		progressions.creepy2 = new Array (1, 6, 2, 5);
-		progressions.endless = new Array (1, 6, 2, 4);
-		progressions.energetic = new Array (1, 3, 4, 6);
-		progressions.grungy = new Array (1, 4, 3, 6);
-		progressions.memories = new Array (1, 4, 1, 5);
-		progressions.rebellious = new Array (4, 1, 4, 5);
-		progressions.sad = new Array (1, 4, 5, 5);
-		progressions.simple = new Array (1, 4);
-		progressions.simple2 = new Array (1, 5);
-		progressions.twelvebarblues = new Array (1, 1, 1, 1, 4, 4, 1, 1, 5, 4, 1, 5);
-		progressions.wistful = new Array (1, 1, 4, 6);
-		
-		var audioIsSupported;
+		<div id="header">
+			<h1>Need help starting a song?</h1>
+		</div><br><br><br>
+	
+		<div id="section">
+			<label for="playSelect">I want to play...</label>
+			<select id="playSelect" >
+				<option value="major">Major</option>
+				<option value="minor">Minor</option>
 
-		var notesWithSharps = new Array(
-			"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"
-		);
-		
-		var currentKey = "";
-		var currentMajMin = "";
-		
-		// Usage: getChords("A#", "min");
-		function getChords(key, majMin) {
-			var notesStartingAtKey = notesWithStartPoint(key, notesWithSharps);
-			var notesInKey = new Array();
-			var steps, majMin;9
-			if (majMin == "maj") {
-				steps = new Array(0, 2, 4, 5, 7, 9, 11);
-				majMin = new Array("", "m", "m", "", "", "m", "dim");
-			}
-			else if (majMin == "min") {
-				steps = new Array(0, 2, 3, 5, 7, 8, 10);
-				majMin = new Array("m", "dim", "", "m", "m", "", "");
-			}
-			else if (majMin == "lydian") {
-				steps = new Array(0, 2, 4, 6, 7, 9, 11);
-				majMin = new Array("", "", "m", "dim", "", "m", "m");
-			}
-			else if (majMin == "phrygian") {
-				steps = new Array(0, 1, 3, 5, 7, 8, 10);
-				majMin = new Array("m", "", "", "m", "dim", "", "m");
-			}
-			else {
-				return;
-			}
-			
-			for (var i = 0; i < steps.length; i++) {
-				var thisStep = steps[i];
-				var thisNote = notesStartingAtKey[thisStep];
-				var thisMajMin = majMin[i];
-				notesInKey.push(thisNote + thisMajMin);
-			}
-			return notesInKey;
-		}
-		</script>
-		<div id="header-holder">
-		<div id="logo"></div>
-		<div class="container">
-			<div class="row">
-				<div id="pageHeading" class="sixteen columns">
-					<h1>AutoChords</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div id="feel-and-key" class="one-third column">
-				<h3>Feel and Key</h3>
-				<div>
-					<label for="moodSelect">I want to play...</label>
-					<select id="moodSelect" onchange="paramChanged()">
-						<option value="alternative">Alternative</option>
-						<option value="canon">Rock</option>
-						<option value="cliche">Clich&eacute;</option>
-						<option value="cliche2">Clich&eacute; 2</option>
-						<option value="creepy">Creepy Stuff</option>
-						<option value="creepy2">Creepy Stuff 2</option>
-						<option value="endless">Endless</option>
-						<option value="energetic">Energetic</option>
-						<option value="grungy">Grungy</option>
-						<option value="memories">Memories</option>
-						<option value="rebellious">Rebellious</option>
-						<option value="sad">Sad Ballad</option>
-						<option value="simple">Simple</option>
-						<option value="simple2">Simple 2</option>
-						<option value="twelvebarblues">Twelve Bar Blues</option>
-						<option value="wistful">Wistful Ballad</option>
-					</select>
-				</div>
-				<div>
-					<label>in the key of...</label>
-					<select id="keySelect" onchange="paramChanged()">
-						<option value="A">A</option>
-						<option value="B">B</option>
-						<option value="C">C</option>
-						<option value="D">D</option>
-						<option value="E">E</option>
-						<option value="F">F</option>
-						<option value="G">G</option>
-					</select>
+			</select>
+		</div><br><br><br>
+		<div id="article">
+			<label>In the key of.....</label>
+			<select id="keySelect" >
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C">C</option>
+				<option value="D">D</option>
+				<option value="E">E</option>
+				<option value="F">F</option>
+				<option value="G">G</option>
+			</select>
+			<button type="button" onclick="paraChanged()">...........Get Inspired!!</button>
+		</div><br><br>
+		<div id="output"></div>
+
+		<script type="text/javascript">
+			function paraChanged(){
+				var key = document.getElementById("keySelect");
+				var play = document.getElementById("playSelect");
+				var result = key.value;
+				var result2 = play.value;
+
+				if (result == "A" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "A - G - C";
+				} else if (result == "A" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Am - Gm - C";
+				} else if (result == "B" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "B - F# - A - E";
+				} else if (result == "B" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Bm - G - D - Bm";
+				} else if (result == "C" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "C - G - Am - G";
+				} else if (result == "C" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Cm - G - Fm - Fm";
+				} else if (result == "D" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "D - A - E - E";
+				} else if (result == "D" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Dm - Am - C - Am";
+				} else if (result == "E" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "E - D - A - E";
+				} else if (result == "E" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Em - G - Dsus - Em";
+				} else if (result == "F" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "F - C - G - A";
+				} else if (result == "F" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Fm - Cm - G";
+				} else if (result == "G" && result2 == "major"){
+					output = document.getElementById("output");
+					output.innerHTML = "G - D - C - E";
+				} else if(result == "G" && result2 == "minor"){
+					output = document.getElementById("output");
+					output.innerHTML = "Gm - F - C - Dm";
+				}
+
 				
-				</div>
-			</div>
+
+			}
+
+
+
+		</script>
 	</body>
 </html>
