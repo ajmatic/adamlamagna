@@ -1,0 +1,573 @@
+/**
+ * Arrange, v1.2
+ * A very basic grid system, a bit like Skeleton
+ *
+ * Copyright (c) 2013, Fred LeBlanc
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without 
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  - Redistributions of source code must retain the above copyright notice, 
+ *    this list of conditions and the following disclaimer.
+ *
+ *  - Redistributions in binary form must reproduce the above copyright notice, 
+ *    this list of conditions and the following disclaimer in the documentation 
+ *    and/or other materials provided with the distribution.
+ * 
+ *  - Neither the name of FredHQ nor the names of its contributors 
+ *    may be used to endorse or promote products derived from this software 
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+
+
+/**
+ * Base Structure
+ * ----------------------------------------------------------------------------
+ * The following styles create elements that are used to structure the general
+ * page and hold together sets of grid columns. They are self-clearing.
+ */
+
+/**
+ * Holds the contents of the page, preventing it from spilling out everywhere,
+ * you'll probably want to extend this with a max-width and width.
+ *
+ * Uses the micro-clearfix, by Nicolas Gallagher
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.container,
+.row {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.container:after,
+.row:after,
+.clearfix:after {
+	clear: both;
+}
+
+/**
+ * Defines the basics of what a grid column will be
+ */
+.column,
+.columns {
+	float: left;
+	display: block;
+	margin: 0 0 0 4%;
+}
+
+.column:first-child,
+.columns:first-child {
+	margin-left: 0;
+}
+
+/**
+ * Old-school clearing elements
+ */
+hr.clear,
+br.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	border: 0;
+}
+
+
+/**
+ * Grid Structure
+ * ----------------------------------------------------------------------------
+ * The following styles create grid columns in percentages.
+ *
+ * Terminology:
+ *    column - 4.6667% - a single-width column of content
+ *    gap    - 4.0% - room between content columns
+ *
+ * The math:
+ *    width  = (# of columns * 4.6667%) + ((# of columns - 1) * 4.0%) 
+ */
+
+.twelfth.column,
+.twelfth.columns,
+.one-twelfth.column,
+.one-twelfth.columns,
+.one.column,
+.one.columns {
+	width: 4.6667%
+}
+
+.sixth.column,
+.sixth.columns,
+.one-sixth.column,
+.one-sixth.columns,
+.two.column,
+.two.columns {
+	width: 13.3333%;
+}
+
+.fourth.column,
+.fourth.columns,
+.quarter.column,
+.quarter.columns,
+.one-quarter.column,
+.one-quarter.columns,
+.one-fourth.column,
+.one-fourth.columns,
+.three.column,
+.three.columns {
+	width: 22%;
+}
+
+.third.column,
+.third.columns,
+.one-third.column,
+.one-third.columns,
+.four.column,
+.four.columns {
+	width: 30.6667%;
+}
+
+.five.column,
+.five.columns {
+	width: 39.3333%;
+}
+
+.half.column,
+.half.columns,
+.one-half.column,
+.one-half.columns,
+.six.column,
+.six.columns {
+	width: 48%;
+}
+
+.seven.column,
+.seven.columns {
+	width: 56.6667%;
+}
+
+.two-thirds.column,
+.two-thirds.columns,
+.eight.column,
+.eight.columns {
+	width: 65.3333%;
+}
+
+.three-quarters.column,
+.three-quarters.columns,
+.three-fourths.column,
+.three-fourths.columns,
+.nine.column,
+.nine.columns {
+	width: 74%;
+}
+
+.ten.column,
+.ten.columns {
+	width: 82.6667%;
+}
+
+.eleven.column,
+.eleven.columns {
+	width: 91.3333%;
+}
+
+.full.column,
+.full.columns,
+.twelve.column,
+.twelve.columns {
+	width: 100%;
+}
+
+
+/**
+ * Grid Offsets
+ * ----------------------------------------------------------------------------
+ * For adding spacing between columns.
+ */
+
+.offset-by-twelfth.column,
+.offset-by-twelfth.columns,
+.offset-by-one-twelfth.column,
+.offset-by-one-twelfth.columns,
+.offset-by-one.column,
+.offset-by-one.columns {
+	margin-left: 12.6667%;
+}
+
+.offset-by-twelfth.column:first-child,
+.offset-by-twelfth.columns:first-child,
+.offset-by-one-twelfth.column:first-child,
+.offset-by-one-twelfth.columns:first-child,
+.offset-by-one.column:first-child,
+.offset-by-one.columns:first-child {
+	margin-left: 8.6667%;
+}
+
+.offset-by-sixth.column,
+.offset-by-sixth.columns,
+.offset-by-one-sixth.column,
+.offset-by-one-sixth.columns,
+.offset-by-two.column,
+.offset-by-two.columns {
+	margin-left: 21.3333%;
+}
+
+.offset-by-sixth.column:first-child,
+.offset-by-sixth.columns:first-child,
+.offset-by-one-sixth.column:first-child,
+.offset-by-one-sixth.columns:first-child,
+.offset-by-two.column:first-child,
+.offset-by-two.columns:first-child {
+	margin-left: 17.3333%;
+}
+
+.offset-by-quarter.column,
+.offset-by-quarter.columns,
+.offset-by-one-quarter.column,
+.offset-by-one-quarter.columns,
+.offset-by-one-fourth.column,
+.offset-by-one-fourth.columns,
+.offset-by-three.column,
+.offset-by-three.columns {
+	margin-left: 30%;
+}
+
+.offset-by-quarter.column:first-child,
+.offset-by-quarter.columns:first-child,
+.offset-by-one-quarter.column:first-child,
+.offset-by-one-quarter.columns:first-child,
+.offset-by-one-fourth.column:first-child,
+.offset-by-one-fourth.columns:first-child,
+.offset-by-three.column:first-child,
+.offset-by-three.columns:first-child {
+	margin-left: 26%;
+}
+
+.offset-by-third.column,
+.offset-by-third.columns,
+.offset-by-one-third.column,
+.offset-by-one-third.columns,
+.offset-by-four.column,
+.offset-by-four.columns {
+	margin-left: 38.6667%;
+}
+
+.offset-by-third.column:first-child,
+.offset-by-third.columns:first-child,
+.offset-by-one-third.column:first-child,
+.offset-by-one-third.columns:first-child,
+.offset-by-four.column:first-child,
+.offset-by-four.columns:first-child {
+	margin-left: 34.6667%;
+}
+
+.offset-by-five.column,
+.offset-by-five.columns {
+	margin-left: 47.3333%;
+}
+
+.offset-by-five.column:first-child,
+.offset-by-five.columns:first-child {
+	margin-left: 43.3333%;
+}
+
+.offset-by-half.column,
+.offset-by-half.columns,
+.offset-by-one-half.column,
+.offset-by-one-half.columns,
+.offset-by-six.column,
+.offset-by-six.columns {
+	margin-left: 56%;
+}
+
+.offset-by-half.column:first-child,
+.offset-by-half.columns:first-child,
+.offset-by-one-half.column:first-child,
+.offset-by-one-half.columns:first-child,
+.offset-by-six.column:first-child,
+.offset-by-six.columns:first-child {
+	margin-left: 52%;
+}
+
+.offset-by-seven.column,
+.offset-by-seven.columns {
+	margin-left: 64.6667%;
+}
+
+.offset-by-seven.column:first-child,
+.offset-by-seven.columns:first-child {
+	margin-left: 60.6667%;
+}
+
+.offset-by-two-thirds.column,
+.offset-by-two-thirds.columns,
+.offset-by-eight.column,
+.offset-by-eight.columns {
+	margin-left: 73.3333%;
+}
+
+.offset-by-two-thirds.column:first-child,
+.offset-by-two-thirds.columns:first-child,
+.offset-by-eight.column:first-child,
+.offset-by-eight.columns:first-child {
+	margin-left: 69.3333%;
+}
+
+.offset-by-three-quarters.column,
+.offset-by-three-quarters.columns,
+.offset-by-three-fourths.column,
+.offset-by-three-fourths.columns,
+.offset-by-nine.column,
+.offset-by-nine.columns {
+	margin-left: 82%;
+}
+
+.offset-by-three-quarters.column:first-child,
+.offset-by-three-quarters.columns:first-child,
+.offset-by-three-fourths.column:first-child,
+.offset-by-three-fourths.columns:first-child,
+.offset-by-nine.column:first-child,
+.offset-by-nine.columns:first-child {
+	margin-left: 78%;
+}
+
+.offset-by-ten.column,
+.offset-by-ten.columns {
+	margin-left: 90.6667%;
+}
+
+.offset-by-ten.column:first-child,
+.offset-by-ten.columns:first-child {
+	margin-left: 86.6667%;
+}
+
+.offset-by-eleven.column:first-child,
+.offset-by-eleven.columns:first-child {
+	margin-left: 95.3333%;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/**
+ * Reversing (optional)
+ * ----------------------------------------------------------------------------
+ * Flip the order in which the columns are laid out.
+ */
+.reverse > .column,
+.reverse > .columns {
+	float: right;
+	margin: 0 4% 0 0;
+}
+
+.reverse > .column:first-child,
+.reverse > .columns:first-child {
+	margin-right: 0;
+}
+
+
+.reverse > .offset-by-twelfth.column,
+.reverse > .offset-by-twelfth.columns,
+.reverse > .offset-by-one-twelfth.column,
+.reverse > .offset-by-one-twelfth.columns,
+.reverse > .offset-by-one.column,
+.reverse > .offset-by-one.columns {
+	margin-left: 0;
+	margin-right: 12.6667%;
+}
+
+.reverse > .offset-by-twelfth.column:first-child,
+.reverse > .offset-by-twelfth.columns:first-child,
+.reverse > .offset-by-one-twelfth.column:first-child,
+.reverse > .offset-by-one-twelfth.columns:first-child,
+.reverse > .offset-by-one.column:first-child,
+.reverse > .offset-by-one.columns:first-child {
+	margin-right: 8.6667%;
+}
+
+.reverse > .offset-by-sixth.column,
+.reverse > .offset-by-sixth.columns,
+.reverse > .offset-by-one-sixth.column,
+.reverse > .offset-by-one-sixth.columns,
+.reverse > .offset-by-two.column,
+.reverse > .offset-by-two.columns {
+	margin-left: 0;
+	margin-right: 21.3333%;
+}
+
+.reverse > .offset-by-sixth.column:first-child,
+.reverse > .offset-by-sixth.columns:first-child,
+.reverse > .offset-by-one-sixth.column:first-child,
+.reverse > .offset-by-one-sixth.columns:first-child,
+.reverse > .offset-by-two.column:first-child,
+.reverse > .offset-by-two.columns:first-child {
+	margin-right: 17.3333%;
+}
+
+.reverse > .offset-by-quarter.column,
+.reverse > .offset-by-quarter.columns,
+.reverse > .offset-by-one-quarter.column,
+.reverse > .offset-by-one-quarter.columns,
+.reverse > .offset-by-one-fourth.column,
+.reverse > .offset-by-one-fourth.columns,
+.reverse > .offset-by-three.column,
+.reverse > .offset-by-three.columns {
+	margin-left: 0;
+	margin-right: 30%;
+}
+
+.reverse > .offset-by-quarter.column:first-child,
+.reverse > .offset-by-quarter.columns:first-child,
+.reverse > .offset-by-one-quarter.column:first-child,
+.reverse > .offset-by-one-quarter.columns:first-child,
+.reverse > .offset-by-one-fourth.column:first-child,
+.reverse > .offset-by-one-fourth.columns:first-child,
+.reverse > .offset-by-three.column:first-child,
+.reverse > .offset-by-three.columns:first-child {
+	margin-right: 26%;
+}
+
+.reverse > .offset-by-third.column,
+.reverse > .offset-by-third.columns,
+.reverse > .offset-by-one-third.column,
+.reverse > .offset-by-one-third.columns,
+.reverse > .offset-by-four.column,
+.reverse > .offset-by-four.columns {
+	margin-left: 0;
+	margin-right: 38.6667%;
+}
+
+.reverse > .offset-by-third.column:first-child,
+.reverse > .offset-by-third.columns:first-child,
+.reverse > .offset-by-one-third.column:first-child,
+.reverse > .offset-by-one-third.columns:first-child,
+.reverse > .offset-by-four.column:first-child,
+.reverse > .offset-by-four.columns:first-child {
+	margin-right: 34.6667%;
+}
+
+.reverse > .offset-by-five.column,
+.reverse > .offset-by-five.columns {
+	margin-left: 0;
+	margin-right: 47.3333%;
+}
+
+.reverse > .offset-by-five.column:first-child,
+.reverse > .offset-by-five.columns:first-child {
+	margin-right: 43.3333%;
+}
+
+.reverse > .offset-by-half.column,
+.reverse > .offset-by-half.columns,
+.reverse > .offset-by-one-half.column,
+.reverse > .offset-by-one-half.columns,
+.reverse > .offset-by-six.column,
+.reverse > .offset-by-six.columns {
+	margin-left: 0;
+	margin-right: 56%;
+}
+
+.reverse > .offset-by-half.column:first-child,
+.reverse > .offset-by-half.columns:first-child,
+.reverse > .offset-by-one-half.column:first-child,
+.reverse > .offset-by-one-half.columns:first-child,
+.reverse > .offset-by-six.column:first-child,
+.reverse > .offset-by-six.columns:first-child {
+	margin-right: 52%;
+}
+
+.reverse > .offset-by-seven.column,
+.reverse > .offset-by-seven.columns {
+	margin-left: 0;
+	margin-right: 64.6667%;
+}
+
+.reverse > .offset-by-seven.column:first-child,
+.reverse > .offset-by-seven.columns:first-child {
+	margin-right: 60.6667%;
+}
+
+.reverse > .offset-by-two-thirds.column,
+.reverse > .offset-by-two-thirds.columns,
+.reverse > .offset-by-eight.column,
+.reverse > .offset-by-eight.columns {
+	margin-left: 0;
+	margin-right: 73.3333%;
+}
+
+.reverse > .offset-by-two-thirds.column:first-child,
+.reverse > .offset-by-two-thirds.columns:first-child,
+.reverse > .offset-by-eight.column:first-child,
+.reverse > .offset-by-eight.columns:first-child {
+	margin-right: 69.3333%;
+}
+
+.reverse > .offset-by-three-quarters.column,
+.reverse > .offset-by-three-quarters.columns,
+.reverse > .offset-by-three-fourths.column,
+.reverse > .offset-by-three-fourths.columns,
+.reverse > .offset-by-nine.column,
+.reverse > .offset-by-nine.columns {
+	margin-left: 0;
+	margin-right: 82%;
+}
+
+.reverse > .offset-by-three-quarters.column:first-child,
+.reverse > .offset-by-three-quarters.columns:first-child,
+.reverse > .offset-by-three-fourths.column:first-child,
+.reverse > .offset-by-three-fourths.columns:first-child,
+.reverse > .offset-by-nine.column:first-child,
+.reverse > .offset-by-nine.columns:first-child {
+	margin-right: 78%;
+}
+
+.reverse > .offset-by-ten.column,
+.reverse > .offset-by-ten.columns {
+	margin-left: 0;
+	margin-right: 90.6667%;
+}
+
+.reverse > .offset-by-ten.column:first-child,
+.reverse > .offset-by-ten.columns:first-child {
+	margin-right: 86.6667%;
+}
+
+.reverse > .offset-by-eleven.column:first-child,
+.reverse > .offset-by-eleven.columns:first-child {
+	margin-left: 0;
+	margin-right: 95.3333%;
+}

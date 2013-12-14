@@ -1,0 +1,55 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
+html{line-height:1}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+q,blockquote{quotes:none}
+q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}
+a img{border:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+html{-webkit-font-smoothing:antialiased}
+body{color:#66564f;font-family:"adelle", Georgia, serif;margin:0 auto;max-width:1028px;line-height:1.375em;font-size:16px}
+h1,h2{color:#ea9344;font-family:"ratio",Helvetica,Arial,sans-serif;text-align:center}
+h1{font-size:2.5em;margin:0.75em 0;line-height:1.375em;font-weight:800;letter-spacing:-0.0625em}
+h2{font-size:1.5em;line-height:1.83333em;margin-bottom:0.45833em;font-weight:600}
+h3{color:#66564f;font-family:"ratio",Helvetica,Arial,sans-serif;font-weight:600;font-size:1.25em;line-height:1.1em;margin-bottom:0.55em}
+h4{color:#ea9344;font-size:1em;line-height:1.375em;font-family:"adelle", Georgia, serif;font-weight:normal;font-style:italic;margin-top:1.25em}
+p{margin:0 0 1em}
+strong{font-weight:bold}a{color:#e24f40;text-decoration:none}
+.clear{clear:both}
+.hidden{display:none}
+.shown{display:block}
+.warning{color:#e24f40}
+.btn{background:#e24f40;color:#FFF;display:block;font-size:1em;font-weight:bold;height:2.6875em;padding:0 2em;position:relative;text-align:center;text-transform:uppercase;border:0;border-bottom:5px solid #ae372b;margin:0 auto}
+.container{padding:1.375em 0 1.375em 1.98413%;border-top:0.375em solid #fff6dd}
+.main-header{float:left;margin-right:1.98413%;width:98.01587%;border-width:0px;padding:0 0%;text-align:center}
+.conference-info{float:left;margin-right:1.98413%;width:98.01587%;border-width:0px;padding:0 0%}
+@media (min-width: 750px){
+	.conference-info{float:left;margin-right:1.98413%;width:56.34921%;border-width:0px;padding:0 0%}}
+	.conference-info-list{list-style:disc;margin-left:1.875em}
+	.signup{background:#fff6dd;float:left;margin-right:1.98413%;width:95.63492%;border-width:0px;padding:0.75em 1.19048%}
+	@media (min-width: 750px){.signup{float:left;margin-right:1.98413%;width:37.30159%;border-width:0px;padding:0.75em 1.19048%}}.email-info label{padding-right:8px}
+	.email-info input[type="checkbox"]{float:left;display:block}
+	.email-info input[type="text"]{border:2px solid #ea9344}
+	.email-info .email-field{width:54.56349%}
+	.check-box-info{font-size:0.75em}
+	.promise{font-size:0.75em;line-height:1.1em}
+	.expert-list{overflow:hidden}.expert-list-item{float:left;margin-right:1.98413%;width:98.01587%;border-width:0px;padding:0 0%;height:24.375em}
+	.expert-list-item img{max-width:320px;display:block;margin:0 auto;width:100%}
+	.expert-list-item span{display:block}
+	.expert-list-item span:hover{background:#fffcec}
+	.expert-list-item span:hover h3{color:#e24f40}
+	.expert-list-item span:hover p.action{color:#ae372b}
+	.expert-list-item p{color:rgba(91,74,66,0.7)}
+	.expert-list-item p.action{color:#e24f40;font-weight:bold}
+	@media (min-width: 630px){.expert-list-item{float:left;margin-right:1.98413%;width:48.01587%;border-width:0px;padding:0 0%}}
+	@media (min-width: 850px){.expert-list-item{float:left;margin-right:1.98413%;width:31.34921%;border-width:0px;padding:0 0%}}
+	.main-footer{float:left;margin-right:1.98413%;width:98.01587%;border-width:0px;padding:0 0%;margin-bottom:1.875em;background:url("http://uie.com/events/uiconf/2012/lib/img/bg/bg-double-lines.png") repeat-x 0 0}
+	.main-footer p{font-size:0.8125em;margin:0}
+	.main-footer .comments{margin-top:0.75em}
+	.contact,.uie-logo{float:left;margin-right:1.98413%;width:94.04762%;border-width:0px;padding:1.25em 1.98413%}
+	@media (min-width: 768px){.contact,.uie-logo{float:left;margin-right:1.98413%;width:44.04762%;border-width:0px;padding:1.25em 1.98413%}}
+	.uie-logo{text-align:center}
+	.uie-logo img{max-width:150px}
+
+

@@ -1,0 +1,258 @@
+
+
+<html>
+	<head>
+		<title>UI17: User Interface 17, The UX &amp; Design Conference</title>
+		<script type="text/javascript" src="//use.typekit.net/fae8pbr.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="sass/print.css" media="print" rel="stylesheet" type="text/css" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<!--[if IE]>
+		<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="main-header">
+				<a href="http://uie.com/events/uiconf/2012/"><img src="img/ui18-logo-medium.png" alt="logo" class="logo" /></a>
+				<h1>Critical skills you need to enhance your UX&nbsp;designs</h1>
+			</header>
+			<div class="conference-info">
+				<p>UI18 OnDemand brings you the skills you need to keep up with the latest tools, techniques, and processes to deliver the best user experience possible.</p>
+				<p>Explore 13 hours of video and audio recordings from the inspiring 90-minute talks and all the session materials and presentations.</p>
+                <ul class="conference-info-list">
+                    <li>Becoming a masterful change agent within your organization</li>
+                    <li>Keeping your content flexible regardless of the devices </li>
+                    <li>Improving how you collect, deliver and receive critique</li>
+                    <li>Transitioning from first-person interfaces to a more immersive UI&nbsp;experience</li>
+                    <li>Understanding the role links play on your website</li>
+                    <li>Designing for emotional impact and user delight</li>
+                    <li>Running more effective meetings, resulting in better insights </li>
+                    <li>Using HTML prototyping and sketching for improved communication</li>
+                    <li>Incorporating progressive enhancement to design adaptive, multi-device experiences</li>
+                </ul>
+                <br />
+				<p>Sign up today and you&rsquo;ll get them absolutely free. No strings&nbsp;attached.</p>
+			</div>
+			<div id="signup" class="signup">
+				<h2>Get Free Access to the Recordings</h2>
+                <form class="email-info">
+                    <p class="warning hidden" id="email-warning">
+                        Your email address is invalid, please try again.
+                    </p>
+                    <p class="align">
+                        <label for="email">Email Address:</label>
+                    	<input type="text" name="email" id="email" class="email-field" />
+                    </p>
+                    <p>
+                        <input type="checkbox" name="tips" id="tips" />
+                        <label for="tips" class="check-box-info">I want to subscribe to <strong>UIETips</strong> to get UIE&rsquo;s UX research.</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="other" id="other" />
+                        <label for="other" class="check-box-info">Tell me more about the 2013 User Interface Conference</label>
+                    </p>
+                    <p class="warning hidden" id="msg"></p>
+                    <p>
+                        <input type="submit" class="btn" id="btnSubmit" value="GET THE GOODS" />
+                    </p>
+                </form>
+				<div class="email-capture"></div>
+				<p class="promise">We promise to never sell or share your email. We will send you an email on accessing UI18 OnDemand.</p>
+			</div>
+<style>
+.align label{width:140px;display:inline;float:left;text-align:right}
+.align input{margin-left:150px;display:block}
+.warning{text-align:center;font-size:.9em;margin:1em 0 3px}
+#btnSubmit{cursor:pointer}
+#btnSubmit.success{cursor:default}
+#msg a{text-decoration:underline;font-weight:bold}
+div#signup > header {display:block; width:100%; margin: 0 auto .66em; }
+div#signup > header > h2 {margin-bottom: 0;}
+p.subhead { width:66%; margin: 0 16%; text-align: center; font-style: italic;}
+form {width: 96%; margin: 0 auto;}
+</style>
+
+<script>
+$(document).ready(function(){
+
+    var submitForm = function() {
+    	var btn = $('#btnSubmit');
+
+        $(".warning").hide();
+
+        var email = $('#email').val().trim();
+
+        if (!IsEmail(email)) {
+           	$("#email-warning").show();
+        }
+        else {
+
+           var uietips = ($("#tips").is(":checked")) ? "Y" : "N";
+           var uiconf = ($("#other").is(":checked")) ? "Y" : "N";
+
+           // Change button to depressed look and change inner text to show progress
+           btn.addClass("clicked").html("Loading...");
+
+           var req = window.location.href + "?email=" + encodeURIComponent($("#email").val()) + "&uietips=" + uietips + "&uiconf=" + uiconf + "&ajax=1";
+
+           $.getJSON(req, function(data) {
+               if (data.status == 'success') {
+                   $("#signup").html(data.msg);
+               }
+               else {
+                   $("#msg").html(data.msg).show();
+               }
+           });
+
+        }
+        return false;
+    };
+
+    function IsEmail(email) {
+    	  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    	  return regex.test(email);
+	}
+    function IsValidPwd(pwd) {
+  	  return pwd.length > 2;
+	}
+
+    $("#btnSubmit").click(submitForm);
+    $("#email").keypress(function(e) {
+        if(e.which === 13) {
+            e.preventDefault();
+            submitForm();
+        }
+    });
+});
+</script>
+
+			<div class="clear"></div>
+			<div class="ux-experts">
+				<h2>The UX Experts and their presentations</h2>
+				<ul class="expert-list">
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/luke.jpg" alt="Luke Wroblewski" />
+							<hgroup>
+								<h4>Luke Wroblewski</h4>
+								<h3>First Person User Interfaces</h3>
+							</hgroup>
+							<p>
+								Technologies today enable us to interact with the real world. See how to remove abstraction from UI&rsquo;s and create immersive experiences that present new business opportunities.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/adam-aaron.jpg" alt="Adam &smp; Aaron" />
+							<hgroup>
+								<h4>Adam Connor &amp; Aaron Irizarry</h4>
+								<h3>Discussing Design</h3>
+							</hgroup>
+							<p>
+								Critiques&ndash;and the language for discussing design&ndash;are an important part of our growth as designers. Improve how you collect, deliver, and receive them.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/karen.jpg" alt="Luke Wroblewski" />
+							<hgroup>
+								<h4>Karen McGrane</h4>
+								<h3>Adapting Ourselves to Adaptive Content</h3>
+							</hgroup>
+							<p>
+								Our cross-platform world demands more flexible content, because what worked for the desktop simply won&rsquo;t work for mobile. See how our content workflow can keep up.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/kim.jpg" alt="Kim Goodwin" />
+							<hgroup>
+								<h4>Kim Goodwin</h4>
+								<h3>Your Toughest Design Challenge</h3>
+							</hgroup>
+							<p>
+								Helping teams support and implement our designs can feel like an uphill battle. Become a masterful change agent using strategies that work with your organization&rsquo;s culture.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/jared-wide.jpg" alt="Jared M. Spool" />
+							<hgroup>
+								<h4>Jared Spool</h4>
+								<h3>The Secret Lives of Links</h3>
+							</hgroup>
+							<p>
+								Take a journey to learn the secret lives that our sites&rsquo; links are living. You&rsquo;ll explore the good and bad from web sites across many industries.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/nathan.jpg" alt="Nathan Curtis" />
+							<hgroup>
+								<h4>Nathan Curtis</h4>
+								<h3>Fearless Prototyping for Skeptics</h3>
+							</hgroup>
+							<p>
+								You don&rsquo;t need extensive HTML experience to prototype or sketch your ideas. Learn how to do both quickly and start to communicate more effectively with your team.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/kevin.jpg" alt="Kevin Hoffman" />
+							<hgroup>
+								<h4>Kevin Hoffman</h4>
+								<h3>Designing Stellar Meetings</h3>
+							</hgroup>
+							<p>
+								Apply your UX design thinking to run meetings that result in better insights faster, more cohesive teams, and access to new ideas from everyone involved.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/dana.jpg" alt="Nathan Curtis" />
+							<hgroup>
+								<h4>Dana Chisnell</h4>
+								<h3>The Three Levels of Happy&nbsp;Design</h3>
+							</hgroup>
+							<p>
+								Beyond interaction design and usability testing lies an important element: user happiness. Learn the three levels of happy design to shift your thinking and design for emotion.
+							</p>
+						</span>
+					</li>
+					<li class="expert-list-item">
+						<span>
+							<img src="http://uie.com/events/uiconf/2012/lib/img/aaron.jpg" alt="Aaron Gustafson" />
+							<hgroup>
+								<h4>Aaron Gustafson</h4>
+								<h3>Building Adaptive Designs Now</h3>
+							</hgroup>
+							<p>
+								Progressive enhancement helps us design adaptive, multi-device experiences effectively. Get techniques to evolve your creative process and expand your technical skill set, too.
+							</p>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<footer class="main-footer">
+				<div class="contact">
+					<p>Copyright &copy; 2013, User Interface Engineering. All Rights Reserved.</p>
+					<p>510 Turnpike St., Suite 102, North Andover, MA 01845</p>
+					<p>1.800.588.9855 (within the U.S. and Canada) or +1.978.327.5561</p>
+					<p class="comments">Questions or comments? Please send e-mail to <a href="mailto:events@uie.com">events@uie.com</a></p>
+				</div>
+				<div class="uie-logo">
+                    <img src="images/logo_new_small2.jpg" />
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
