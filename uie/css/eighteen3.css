@@ -1,15 +1,9 @@
-.signup{background:#fff6dd;
-	float:left;
-	margin-right:1.98413%;
-	width:95.63492%;
-	border-width:0px;
-	padding:0.75em 1.19048%}
+#signup {
+	float: right;
+	width: 37%;
+}
 
-@media (min-width: 750px){.signup{float:left;margin-right:1.98413%;width:37.30159%;border-width:0px;padding:0.75em 1.19048%}}.email-info label{padding-right:8px}
-.email-info input[type="checkbox"]{float:left;display:block}
-	.email-info input[type="text"]{border:2px solid #ea9344}
-	.email-info .email-field{width:54.56349%}
-	.check-box-info{font-size:0.75em}
+
 
 .promise {
 	font-size: .75em;
