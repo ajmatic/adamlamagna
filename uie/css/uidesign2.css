@@ -5,26 +5,26 @@ body {
 }
 
 #header {
-	top: 0;
-	right: 1.2rem;
-	left: 1.2rem;
-	position: fixed;
-	background: #5CBDFF;
+	background: #00332c;
 	border-bottom: 0.063rem solid;
 	text-align: center;
+	padding: 1rem;
 }
 
 #logo {
 	width: 160px;
 	height: 167.6px;
-	float: left;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 	font-family: 'Balthazar', serif;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1rem;
 	text-align: center;
-	padding-top: .5rem;
 	color: white;
 	text-shadow: 2px 2px 1px #00332c,
 				3px 3px 1px #f47b53;
@@ -36,43 +36,41 @@ h1 {
 	display: inline-block;
 }
 
-
-#nav a {
-	text-decoration: none;
-	color: #00332c;
-	vertical-align: top;
+nav {
+	display: block;
+	margin-top: 1rem;
+	margin-left: 8rem;
 }
 
-#nav a:hover {
+nav a {
+	text-decoration: none;
 	color: white;
 }
 
-#nav li {
-	display: inline;
-	vertical-align: top;
+nav a:hover {
+	color: #f47b53;
 }
 
-#nav ul {
-	text-align: center;
-	padding-top: 1.25rem;
-	word-spacing: .6rem;
-	font-size: 1.25rem;
-}
-
-
-#box li a {
-	
-	width: 9rem;
-	padding: .25rem .5rem;
+nav li {
 	display: inline-block;
+	vertical-align: top;
+	padding: 0 2rem;
 }
+
+nav ul {
+	text-align: center;
+	word-spacing: 1rem;
+	font-size: 1.25rem;
+
+}
+
 
 #main {
 	
 	width: 95%;
 	text-align: justify;
 	margin: 0 auto;
-	margin-top: 12.5rem;
+	padding-top: 1rem;
 }
 
 #main p {
@@ -81,10 +79,11 @@ h1 {
 }
 
 #section {
-	border: 3px solid #5CBDFF;
-	width: 50%;
+	border: 3px solid #f47b53;
+	width: 48%;
 	margin-left: 1.4rem;
 	display: inline-block;
+	padding: 1rem;
 }
 
 #section h3 {
@@ -106,34 +105,34 @@ h1 {
  }
 
  #signup {
- 	border: 3px solid #5CBDFF;
- 	background-color: #5CBDFF;
+ 	border: 2px solid #f47b53;
+ 	background-color: #00332c;
+ 	color: white;
+ 	font-family: 'Balthazar', serif;
  	width: 40%;
  	height: 14.5rem;
  	display: inline-block;
  	float: right;
  	margin-right: 1.4rem;
  	clear: left;
+ 	padding: 1rem;
  }
 
  #signup h3 {
+ 	color: white;
  	font-size: 1.5rem;
- 	font-family: 'Balthazar', serif;
 	text-align: center;
  }
 
  #email1 {
- 	
  	font-size: 1.3rem;
  }
 
  #tips1 {
  	font-size: 1.2rem;
- 	font-family: 'Balthazar', serif;
  }
 
  #other1 {
- 	font-family: 'Balthazar', serif;
  	font-size: 1.2rem;
  }
 
@@ -142,7 +141,7 @@ h1 {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius:6px;
-    color: ##00332c;
+    color: #00332c;
     font-family: 'Oswald';
     font-size: 20px;
     text-decoration: none;
@@ -162,5 +161,67 @@ h1 {
 #psubmit {
 	text-align: center;
 }
+
+#mid h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	font-family: 'Balthazar', serif;
+	font-stretch: expanded;
+}
+
+#bottom {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.btn {
+  padding:5px;
+  background-color: #f47b53;
+  border: 1px solid #666;
+  color:#006658;
+  text-decoration:none;
+
+}
+
+td {
+	vertical-align: top;
+	padding: 1rem;
+}
+
+.titlename a {
+	font-family: 'Balthazar', serif;
+	font-size: 1.8rem;
+	color: #f47b53;
+}
+
+.titlename a:hover {
+	color: #00032c;
+}
+
+.name {
+	font-size: 1.5rem;
+	font-family: 'Balthazar', serif;
+	color: #006658;
+}
+
+.desc {
+	font-size: 1.2rem;
+	color: #00032c;
+	font-family: 'Balthazar', serif;
+}
+
+#ender {
+	font-size: 1.2rem;
+	font-family:  serif;
+	font-style: italic;
+}
+
+#endlogo {
+	padding: 1rem;
+}
+
+
+
+
 
 
