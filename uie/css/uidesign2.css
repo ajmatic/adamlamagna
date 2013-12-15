@@ -147,7 +147,6 @@ nav ul {
     text-decoration: none;
     cursor: poiner;
      border:none;
-     
 }
 
 #submit:hover {
@@ -174,14 +173,35 @@ nav ul {
 	margin: 0 auto;
 }
 
-.btn {
-  padding:5px;
-  background-color: #f47b53;
-  border: 1px solid #666;
-  color:#006658;
-  text-decoration:none;
-
+.img {
+	width: 275px;
 }
+
+.action {
+	width: 150px;
+}
+
+.btn {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.btn a {
+	text-decoration: none;
+	background-color: #f47b53;
+	padding: 1rem;
+	border-radius: 7px;
+	color: #00032c;
+	font-family: 'Balthazar', serif;
+	font-size: 1.2rem;
+}
+
+.btn a:hover {
+	background-color: #006658;
+	color: #f47b53;
+}
+
+
 
 td {
 	vertical-align: top;
@@ -218,6 +238,14 @@ td {
 
 #endlogo {
 	padding: 1rem;
+}
+
+#main a {
+	color: #006658;
+}
+
+#main a:hover {
+	color: #f47b53;
 }
 
 
