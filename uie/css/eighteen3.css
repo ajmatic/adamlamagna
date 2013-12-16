@@ -1,11 +1,16 @@
 #signup {
 	float: right;
 	width: 37%;
+	border-radius: 15px;
 }
 
 .promise {
 	font-size: .75em;
 	line-height: 1.1em;
+}
+
+.email-info {
+	border-radius: 15px;
 }
 
 .email-info h2 {
