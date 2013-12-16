@@ -19,15 +19,16 @@
 
 #pbtnSubmit {
 	text-align: center;
-	
 }
 
 #btnSubmit {
 	border-radius: 5px;
+	background-color: #f47b53;
 }
 
 #btnSubmit:hover {
 	cursor: pointer;
+	background-color: #f15623;
 }
 
 #email {
