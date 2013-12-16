@@ -5,44 +5,40 @@
 		<title>User Interface 18 Conference</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="../css/reset.css">
-		<link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/uidesign.css">
-		<script type="text/javascript" src="../js/jquery.min.js"></script>
-		<!--<script type="text/javascript" src="../js/script.js"></script>-->
+		<link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<!--<a href="http://adamlamagna.com/uie/eighteen"><img src="img/ui18-logo-medium.png?v=1383067056" alt="UI18 Logo" class="large"></a>-->
+		
 		<div id="header">
 			<div id="title">
-				<img src="img/ui18-logo-medium.png" id="logo" alt="ui18-logo">
+				<a href="#"><img src="img/ui18-logo-medium.png" id="logo" alt="ui18-logo"></a>
 				<h1>
 					FREE ACCESS TO UX EXPERTS
 				</h1>
+				<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="http://ui18.uie.com/featured-talks">Talk-Descriptions</a></li>
+					<li><a href="https://www.uie.com/events/uiconf/2013/proceedings/order/">Purchase-OnDemand</a></li>
+					<li><a href="https://www.uie.com/events/uiconf/2013/proceedings/login.php?login_required=true">Acces-OnDemand</a></li>
+				</ul>
+			</nav>
 			</div>
-			
-			
-			<div id="nav">
-				<div id="box">
-					<ul>
-						<li><a href="about.html">Home<br></a></li>
-						<li><a href="portfolio.html">Talk Descriptions</a></li>
-						<li><a href="blog.html">Purchase OnDemand</a></li>
-						<li><a href="contact.html">Acces OnDemand</a></li>
-					</ul>
-				</div>
-			</div>
+
+		
 		</div>
-		<div id="section">
-			<div id="article">
-				<p>
-					<strong>UI18 OnDemand</strong> brings you <a href="#talks" class="smooth">10 UX experts</a> sharing best practices and cutting edge techniques on advanced design processes, flexible team-based techniques, and meaningful data display.
+		<div id="main">
+			<p>
+					<strong>UI18 OnDemand</strong> brings you <a href="#talks">10 UX experts</a> sharing best practices and cutting edge techniques on advanced design processes, flexible team-based techniques, and meaningful data display.
 				</p>
 
 				<p>
 					Just imagine what you could do with over 13 hours of video and audio recordings from the inspiring 90-minute talks and all the presentation slides and materials from the kick-butt, full-day workshops.
 				</p><hr>
-				<div class="container">
-				<h3>
+		</div>
+		<div id="section">
+			<h3>
 					Check out these awesome UI18 OnDemand topics that will help you be a better designer.
 				</h3>
 			
@@ -59,40 +55,212 @@
 			            <li>Displaying data</li>
 			            <li>Involving your stakeholder</li>
 			        </ul>
-		    
-				</div>
-					</div>
 		</div>
+		<div id="signup">
+			<h3>Get Free Access to the Recordings</h3>
+			<p id="email1">
+				<label>Enter Your Email:</label>
+				<input type="text" name="email" id="email"  />
+			</p><br>
+			<p id="tips1">
+				<input type="checkbox" name="tips" id="tips" />
+				<label for="tips" class="check-box-info">I want to subscribe to <b>UIETips</b> to get UIE and UX research</label>
+			</p><br>
+			<p id="other1">
+				<input type="checkbox" name="other" id="other" />
+				<label for="other" class="check-box-info">Tell me more about the 2014 User Interface Conference</label>
+			</p><br>
+			<p id="psubmit">
+				<input type="submit" name="submit" value="GET THE GOODS" id="submit" />
+			</p><br>
+			<p class="promise">
+				We promise to never sell or share your email. We will send you an email on accessing UI18 OnDemand.
+			</p><br>
+		</div>
+		<div id="bottom">
+			<div id="mid"><br><hr>
+				<h2 id="talks">UI18 OnDemand includes audio and video from these content rich and entertaining talks:</h2>
+			</div><br>
+			<table>
+				<tr>
+					<td class="img">
+						<img src="img/better-berkun.png" alt="Photo of Scott Berkun">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#scott-berkun">Do Great Work from&nbsp;Anywhere</a></h3>
+						<h5 class="name">Scott Berkun</h5>
+						<p class="desc">
+							How can WordPress be effective when its entire team works remotely? Managers, designers, and developers all thrive in its autonomous environment — hear why.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80400844">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
 			
-
-			<div id="signup" class="signup">
-				
-                <form class="email-info">
-                	<h2>Get Free Access to the Recordings</h2>
-                    <p class="warning hidden" id="email-warning">
-                        
-                    </p>
-                    <p class="align">
-                        <label for="email">Email Address:</label>
-                    	<input type="text" name="email" id="email" class="email-field" />
-                    </p>
-                    <p>
-                        <input type="checkbox" name="tips" id="tips" />
-                        <label for="tips" class="check-box-info">I want to subscribe to <strong>UIETips</strong> to get UIE&rsquo;s UX research.</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="other" id="other" />
-                        <label for="other" class="check-box-info">Tell me more about the 2014 User Interface Conference</label>
-                    </p>
-                    <p class="warning hidden" id="msg"></p>
-                    <p id="pbtnSubmit">
-                        <input type="submit" class="btn" id="btnSubmit" value="GET THE GOODS" />
-                    </p>
-                    <div class="email-capture"></div>
-						<p class="promise">We promise to never sell or share your email. We will send you an email on accessing UI18 OnDemand.</p>
-					</div>
-            	</form>
+				<tr>
+					<td class="img">
+						<img src="img/stephen.jpg" alt="Photo of Stephen Anderson">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#stephen-anderson">Help Users&nbsp;Decide</a></h3>
+						<h5 class="name">Stephen Anderson</h5>
+						<p class="desc">
+							Is your phone bill easy or enjoyable to read? Help users make decisions more easily by displaying your information in highly visual, interactive, and meaningful ways.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80407430">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="img">
+						<img src="img/kim.jpg" alt="Photo of Kim Goodwin">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#kim-goodwin">Get More From User&nbsp;Research</a></h3>
+						<h5 class="name">Kim Goodwin</h5>
+						<p class="desc">
+							Think you don’t have time for user research? Once you see the tools and techniques Kim uses to quickly gather customer insights and prioritize designs, you’ll change your mind.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80405458">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="img">
+						<img src="img/kevin.jpg" alt="Photo of Kevin Hoffman">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#kevin-hoffman">Hold Meetings That Aren't&nbsp;Excruciating</a></h3>
+						<h5 class="name">Kevin Hoffman</h5>
+						<p class="desc">
+							Enjoy your meetings by applying the same design thinking that UX pros already know and love. Get real work done and build consensus, regardless of personalities and opinions.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80400696">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="img">
+						<img src="img/jared-wide.jpg" alt="Photo of Jared Spool">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#jared-spool">It’s a Great Time To Be a UX&nbsp;Designer</a></h3>
+						<h5 class="name">Jared Spool</h5>
+						<p class="desc">
+							There’s never been a better time to be a designer. After years of wishing we’d have the recognition and appreciation for the value we bring, we’re now highly sought after for our talents and skills.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80401199">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="img">
+						<img src="img/christine.jpg" alt="Photo of Christine Perfetti">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#christine-perfetti">Essential UX Techniques for Creating Delightful&nbsp;Products</a></h3>
+						<h5 class="name">Christine Perfetti</h5>
+						<p class="desc">
+							Find out who the right people are to drive your product decisions. Learn to gather insights that lead to user engagement and delight.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80403001">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="img">
+						<img src="img/jeff.jpg" alt="Photo of Jeff Gothelf">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#jeff-gothelf">Axe Requirements-driven Product&nbsp;Design</a></h3>
+						<h5 class="name">Jeff Gothelf</h5>
+						<p class="desc">
+							Start spending your time on the right work for your business by creating a series of hypotheses. Then, run experiments to validate which solutions are worth building.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80400464">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="img">
+						<img src="img/adam-aaron.jpg" alt="Photo of Adam Connor and Aaron Irizarry">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#adam-and-aaron">Discuss Design Without Losing Your&nbsp;Mind</a></h3>
+						<h5 class="name">Adam Connor and Aaron Irizarry</h5>
+						<p class="desc">
+							Overcome the endless barrage of opinions that thwart your design progress. Get the techniques to make critique a positive experience for everyone involved.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80402101">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="img">
+						<img src="img/dan.jpg" alt="Photo of Dan Saffer">
+					</td>
+					<td>
+						<h3 class="titlename"><a href="http://ui18.uie.com/featured-talks#dan-saffer">Dig into Tiny Design&nbsp;Details</a></h3>
+						<h5 class="name">Dan Saffer</h5>
+						<p class="desc">
+							The difference between a product we love and one we only tolerate often lies in these details. Turn your product’s dull microinteractions into memorable, engaging moments.
+						</p>
+					</td>
+					<td class="action">
+						<p class="btn">
+							<a href="http://vimeo.com/80400163">WATCH A CLIP</a>
+						</p>
+					</td>
+				</tr>
+			</table>
 			</div>
+			<footer>
+				<hr>
+					
+						
+						<div id="ender">
+							<p>
+								Questions or comments? Please send e-mail to <a href="mailto:events@uie.com">events@uie.com</a>. User Interface 18 Conference is a proud production of <a href="http://uie.com">User Interface&nbsp;Engineering</a>.
+							</p>
+							
+							<p class="copyright">
+								Copyright © 2013, User Interface Engineering. All Rights Reserved.<br> 510 Turnpike St., Suite 102, North Andover, MA 01845<br> 1.800.588.9855 (within the U.S. and Canada) or&nbsp;+1.978.327.5561
+							</p>
+						</div>
+						<div id="endlogo">
+							<a href="http://uie.com"><img src="img/uie.png?v=1368217603" alt="UIE logo"></a>
+						</div>
+					
+			</footer>
+		
+
 		
 	</body>
 </html>

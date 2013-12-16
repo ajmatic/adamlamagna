@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 4.5rem;
 	font-family: 'Balthazar', serif;
 	display: inline-block;
 	vertical-align: middle;
@@ -82,6 +82,7 @@ nav ul {
 
 #section {
 	border: 3px solid #f47b53;
+	border-radius: 15px;
 	width: 48%;
 	color: #00032c;
 	margin-left: 1.4rem;
@@ -110,6 +111,7 @@ nav ul {
  #signup {
  	border: 2px solid #f47b53;
  	background-color: #00332c;
+ 	border-radius: 15px;
  	color: white;
  	font-family: 'Balthazar', serif;
  	width: 40%;

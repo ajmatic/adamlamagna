@@ -1,30 +1,35 @@
 body {
 	
 	background-color: rgba(238, 238, 238, .75);
+	display: inline-block;
 }
 
 #header {
-	top: 0;
-	right: 1.2rem;
-	left: 1.2rem;
-	position: fixed;
+	width: 95%;
+	margin: 0 auto;
 	background: #00332c;
 	border-bottom: 0.063rem solid;
 	text-align: center;
+	padding: 1rem;
 }
 
 #logo {
 	width: 160px;
 	height: 167.6px;
-	float: left;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4.5rem;
 	font-family: 'Balthazar', serif;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1rem;
 	text-align: center;
-	padding-top: .5rem;
 	color: white;
+	text-shadow: 2px 2px 1px #00332c,
+				3px 3px 1px #f47b53;
 }
 
 
@@ -33,82 +38,235 @@ h1 {
 	display: inline-block;
 }
 
+nav {
+	display: block;
+	margin-top: 1rem;
+	margin-left: 8rem;
+}
 
-#nav a {
+nav a {
 	text-decoration: none;
-	color: #8A0000;
-	vertical-align: top;
-}
-
-#nav a:hover {
-	color: #00332c;
-}
-
-#nav li {
-	display: inline;
-	vertical-align: top;
-}
-
-#nav ul {
-	text-align: center;
-	padding-top: 1.25rem;
-	word-spacing: .6rem;
-	font-size: 1.25rem;
-}
-
-
-#box li a {
-	background-color: #f47b53;
-	width: 9rem;
-	padding: .25rem .5rem;
-	display: inline-block;
 	color: white;
 }
 
-#section  {
-	width: 65%;
+nav a:hover {
+	color: #f47b53;
+}
+
+nav li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 2rem;
+}
+
+nav ul {
+	text-align: center;
+	word-spacing: 1rem;
+	font-size: 1.25rem;
+
+}
+
+
+#main {
+	color: #00032c;
+	width: 95%;
 	text-align: justify;
 	margin: 0 auto;
-	margin-top: 12.5rem;
 	padding-top: 1rem;
-	display: block;
 }
 
-#article p  {
-	font-family: 'Balthazar', serif;
+#main p {
 	font-size: 1.5rem;
+	font-family: 'Balthazar', serif;
 }
 
-#article h3 {
+#section {
+	
+	width: 48%;
+	color: #00032c;
+	margin-left: 1.4rem;
+	display: inline-block;
+	padding: 1rem;
+}
+
+#section h3 {
 	font-size: 1.7rem;
 	font-family: 'Balthazar', serif;
 }
 
-.container {
-	width: 48%;
-	display: inline-block;
+#section li {
+	font-family: 'Balthazar', serif;
+	font-size: 1.4rem;
+}
+ #section ul li{
+ 	list-style-type: square;
+ 	list-style-position: inside;
+ }
+
+ #section ul li {
+ 	text-indent: 10px;
+ }
+
+ #signup {
+ 	
+ 	background-color: #006658;
+ 	border: 2px solid #f47b53;
+ 	border-radius: 10px;
+ 	color: white;
+ 	font-family: 'Balthazar', serif;
+ 	width: 40%;
+ 	height: 14.5rem;
+ 	display: inline-block;
+ 	float: right;
+ 	margin-right: 1.4rem;
+ 	clear: left;
+ 	padding: 1rem;
+ }
+
+ #signup h3 {
+ 	color: white;
+ 	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: .8rem;
+ }
+
+ #email1 {
+ 	font-size: 1.3rem;
+ }
+
+ #email {
+ 	display: inline-block;
+	width: 50%;
+ }
+
+ #tips1 {
+ 	font-size: 1.2rem;
+ }
+
+ #other1 {
+ 	font-size: 1.2rem;
+ }
+
+ #talks {
+ 	color: #00032c;
+ }
+
+ #submit {
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #00332c;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: poiner;
+     border:none;
 }
 
-.container  ul {
+#submit:hover {
+    border: none;
+    background-color: white;
+    color: #f47b53;
+    box-shadow: 0px 0px 1px #777;
+
+}
+
+#psubmit {
+	text-align: center;
+}
+
+#mid h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	font-family: 'Balthazar', serif;
+	font-stretch: expanded;
+}
+
+#bottom {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.img {
+	width: 275px;
+}
+
+.action {
+	width: 150px;
+}
+
+.btn {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.btn a {
+	text-decoration: none;
+	background-color: #f47b53;
+	padding: 1rem;
+	border-radius: 7px;
+	color: #00032c;
+	font-family: 'Balthazar', serif;
 	font-size: 1.2rem;
 }
 
-#signup {
-	width: 37%;
-	display: inline-block;
-	clear: both;
-	float: right;
+.btn a:hover {
+	background-color: #006658;
+	color: #f47b53;
 }
 
 
 
-
-strong {
-	font-weight: bold;
+td {
+	vertical-align: top;
+	padding: 1rem;
 }
 
+.titlename a {
+	font-family: 'Balthazar', serif;
+	font-size: 1.8rem;
+	color: #f47b53;
+}
 
+.titlename a:hover {
+	color: #00032c;
+}
 
+.name {
+	font-size: 1.5rem;
+	font-family: 'Balthazar', serif;
+	color: #006658;
+}
+
+.desc {
+	font-size: 1.2rem;
+	color: #00032c;
+	font-family: 'Balthazar', serif;
+}
+
+#ender {
+	font-size: 1.2rem;
+	font-family:  serif;
+	font-style: italic;
+}
+
+#endlogo {
+	padding: 1rem;
+}
+
+#main a {
+	color: #006658;
+}
+
+#main a:hover {
+	color: #f47b53;
+}
+
+footer {
+	width: 95%;
+	margin: 0 auto;
+}
 
 
 
