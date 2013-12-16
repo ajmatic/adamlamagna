@@ -5,7 +5,9 @@ body {
 }
 
 #header {
-	background: #00332c;
+	width: 95%;
+	margin: 0 auto;
+	background: #006658;
 	border-bottom: 0.063rem solid;
 	text-align: center;
 	padding: 1rem;
@@ -122,10 +124,16 @@ nav ul {
  	color: white;
  	font-size: 1.5rem;
 	text-align: center;
+	padding-bottom: .8rem;
  }
 
  #email1 {
  	font-size: 1.3rem;
+ }
+
+ #email {
+ 	display: inline-block;
+	width: 50%;
  }
 
  #tips1 {
