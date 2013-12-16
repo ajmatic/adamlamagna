@@ -10,7 +10,7 @@
 }
 
 .email-info {
-	border-radius: 15px;
+	border-radius: 5px;
 }
 
 .email-info h2 {
@@ -19,6 +19,15 @@
 
 #pbtnSubmit {
 	text-align: center;
+	
+}
+
+#btnSubmit {
+	border-radius: 5px;
+}
+
+#btnSubmit:hover {
+	cursor: pointer;
 }
 
 #email {
@@ -33,3 +42,4 @@
 .check-box-info {
 	font-size: .75em;
 }
+
