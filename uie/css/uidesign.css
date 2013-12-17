@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-	font-size: 4.5rem;
+	font-size: 4.75rem;
 	font-family: 'Balthazar', serif;
 	display: inline-block;
 	vertical-align: middle;
@@ -76,25 +76,27 @@ nav ul {
 #main p {
 	font-size: 1.5rem;
 	font-family: 'Balthazar', serif;
+	line-height: 2rem;
 }
 
 #section {
-	
 	width: 48%;
 	color: #00032c;
 	margin-left: 1.4rem;
 	display: inline-block;
-	padding: 1rem;
+	padding:  0 1rem 1rem 1rem;
 }
 
 #section h3 {
 	font-size: 1.7rem;
 	font-family: 'Balthazar', serif;
+	padding-bottom: .5rem;
 }
 
 #section li {
 	font-family: 'Balthazar', serif;
 	font-size: 1.4rem;
+	line-height: 1.65rem;
 }
  #section ul li{
  	list-style-type: square;
@@ -106,7 +108,6 @@ nav ul {
  }
 
  #signup {
- 	
  	background-color: #00332c;
  	border: 2px solid #f47b53;
  	border-radius: 10px;
@@ -116,7 +117,7 @@ nav ul {
  	height: 14.5rem;
  	display: inline-block;
  	float: right;
- 	margin-right: 1.4rem;
+ 	margin-right: 2.5rem;
  	clear: left;
  	padding: 1rem;
  }
@@ -126,6 +127,10 @@ nav ul {
  	font-size: 1.5rem;
 	text-align: center;
 	padding-bottom: .8rem;
+ }
+
+ #article {
+ 	padding-top: 1rem;
  }
 
  #email1 {
@@ -147,6 +152,7 @@ nav ul {
 
  #talks {
  	color: #00032c;
+ 	padding-top: 1rem;
  }
 
  #submit {
