@@ -5,8 +5,6 @@ body {
 }
 
 #header {
-	width: 95%;
-	margin: 0 auto;
 	background: #00332c;
 	border-bottom: 0.063rem solid;
 	text-align: center;
