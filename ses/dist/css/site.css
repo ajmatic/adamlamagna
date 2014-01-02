@@ -120,8 +120,12 @@ footer {
 #datefoot {
 	color: #333333;
 	font-size: 2rem;
-	padding-left: 1.6rem;
+	
 
+}
+
+#footer1 {
+	padding-left: 3rem;
 }
 
 #footer2 {
@@ -223,6 +227,10 @@ textarea {
 
 #emp a {
 	color: black;
+}
+
+.spacer {
+	margin-top: 4rem;
 }
 
 
