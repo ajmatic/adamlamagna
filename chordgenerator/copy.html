@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Adam Lamagna</title>
+		<title>Chord generator</title>
 		<link rel="stylesheet" type="text/css" href="/css/reset.css">
 		<link rel="stylesheet" href="/chordgenerator/css/site.css" />
 		<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
@@ -47,38 +47,9 @@
 				var result = key.value;
 				var result2 = play.value;
 				var output = document.getElementById("output");
-				if (result == "A" && result2 == "major"){
-					output.innerHTML = "A - C - G - D";
-				} else if (result == "A" && result2 == "minor"){
-					output.innerHTML = "Am - Em - Dm - Am";
-				} else if (result == "B" && result2 == "major"){
-					output.innerHTML = "B - F# - A - E";
-				} else if (result == "B" && result2 == "minor"){
-					output.innerHTML = "Bm - G - D - Bm";
-				} else if (result == "C" && result2 == "major"){
-					output.innerHTML = "C - G - Am - F";
-				} else if (result == "C" && result2 == "minor"){
-					output.innerHTML = "Cm - G - Fm - Fm";
-				} else if (result == "D" && result2 == "major"){
-					output.innerHTML = "D - A - E - E";
-				} else if (result == "D" && result2 == "minor"){
-					output.innerHTML = "Dm - C - Am - C";
-				} else if (result == "E" && result2 == "major"){
-					output.innerHTML = "E - D - A - E";
-				} else if (result == "E" && result2 == "minor"){
-					output.innerHTML = "Em - G - Dm - C";
-				} else if (result == "F" && result2 == "major"){
-					output.innerHTML = "F - C - G - C";
-				} else if (result == "F" && result2 == "minor"){
-					output.innerHTML = "Fm - Cm - G - G";
-				} else if (result == "G" && result2 == "major"){
-					output.innerHTML = "G - D - C - G";
-				} else if(result == "G" && result2 == "minor"){
-					output.innerHTML = "Gm - F - C - Dm";
-				}
-			}
+				
 
-					if(choice < 0.34 && result == "A" && result2 == "major") {
+				if(choice < 0.34 && result == "A" && result2 == "major") {
 					output.innerHTML = a[0];
 				} else if (choice <= 0.67 && result == "A" && result2 == "major") {
 					output.innerHTML = a[1];
@@ -87,8 +58,6 @@
 				}
 
 			}
-
-
 
 		</script>
 	</body>
