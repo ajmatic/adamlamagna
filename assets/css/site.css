@@ -1,0 +1,70 @@
+#hello h1 {
+	font-size: 6rem;
+	color: rgba(128, 3, 0, 1);
+	text-shadow: 2px 2px 1px #232b2b;
+}
+
+#iconName {
+	color: #232b2b;
+	text-shadow: none;
+}
+
+.fa-road {
+	
+}
+
+.fa-road a:hover {
+	color: #232b2b;
+}
+
+#btnContact a {
+	border-radius: 10px;
+	background-color: gray;
+}
+
+#btnContact a:hover {
+	background-color: #4d5353;
+}
+
+
+#bioContainer {
+	background-color: #232b2b;
+}
+
+#hello h2 {
+	color: #232b2b;
+	font-size: 3rem;
+}
+
+.centered h3 {
+	color: gray;
+}
+
+.centered p {
+	color: white;
+}
+
+.fa-6 {
+	font-size: 20rem;
+	padding-top: 1rem; 
+}
+
+.btn-lg {
+	background-color: gray;
+	border-radius: 10px;
+}
+
+#social i {
+	color: #800000;
+}
+
+p.lead {
+	color: black;
+}
+
+.col-lg-3 ul {
+	text-decoration: none;
+}
+
+
+
