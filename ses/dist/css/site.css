@@ -51,6 +51,10 @@ blockquote {
 	font-size: 18px;
 }
 
+.navbar-default .navbar-nav li li a {
+	color: gray;
+}
+
 .navbar-default .navbar-nav li a:hover {
 	color: gray;
 }
@@ -63,13 +67,17 @@ blockquote {
 	color: gray;
 }
 
+.drop-down li a:hover {
+	background-color: blue;
+}
+
 .mainText {
 	font-size: 1.8rem;
 	font-family: 'Judson', serif;
 	line-height: 2.7rem;
 }
 
-#mainBox {
+.mainBox {
 	background-color: #00539b;
 	color: white; 
 	font-size: 2rem;
@@ -78,19 +86,19 @@ blockquote {
 	margin-top: 2rem;
 }
 
-#headBox {
+.headBox {
 	text-align: center;
 	font-size: 2.7rem;
 	font-weight: bold;
 }
 
-#tagBox {
+.blueBox {
 	text-align: center;
 	font-size: 2.3rem;
 	font-weight: bold;
 }
 
-#mainBox li {
+.mainBox li {
 	line-height: 3.9rem;
 }
 
@@ -98,8 +106,15 @@ blockquote {
 	padding-left: 2rem;
 }
 
-#aboutBox {
+.aboutBox {
 	padding-right: 4rem;
+	text-align: justify;
+}
+
+.blue-home-1 {
+	font-size: 2rem;
+	list-style-type: none;
+	margin-left: -3.5rem;
 }
 
 footer {
@@ -120,8 +135,6 @@ footer {
 #datefoot {
 	color: #333333;
 	font-size: 2rem;
-	
-
 }
 
 #footer1 {
@@ -197,9 +210,7 @@ footer {
 	max-width: 100%;
 }
 
-#home img {
-	border: 1px solid blue;
-}
+
 
 #home #logo {
 	border: 0;
