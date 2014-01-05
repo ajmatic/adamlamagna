@@ -67,11 +67,9 @@ blockquote {
 	color: gray;
 }
 
-.drop-down li a:hover {
-	background-color: blue;
-}
+/* hover navigation */
 
-.sidebar-nav {
+/*.sidebar-nav {
     padding: 9px 0;
 }
 
@@ -81,7 +79,7 @@ blockquote {
 
 .dropdown li:hover  .dropdown-menu {
     display: block;
-}
+}*/ 
 
 .mainText {
 	font-size: 1.8rem;
