@@ -71,6 +71,18 @@ blockquote {
 	background-color: blue;
 }
 
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown li:hover  .dropdown-menu {
+    display: block;
+}
+
 .mainText {
 	font-size: 1.8rem;
 	font-family: 'Judson', serif;
