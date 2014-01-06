@@ -95,6 +95,10 @@ blockquote {
 	padding: 1rem;
 }
 
+.mainBox li {
+	line-height: 3.9rem;
+}
+
 .headBox {
 	text-align: center;
 	font-size: 2.7rem;
@@ -105,10 +109,6 @@ blockquote {
 	text-align: center;
 	font-size: 2.3rem;
 	font-weight: bold;
-}
-
-.mainBox li {
-	line-height: 3.9rem;
 }
 
 .pageHead {
@@ -122,11 +122,6 @@ blockquote {
 	list-style-type: none;
 	font-weight: bold;
 }
-
-.coreBox {
-	list-style: none;
-}
-
 
 .blue-home-1 {
 	font-size: 2rem;
