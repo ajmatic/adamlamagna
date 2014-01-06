@@ -115,6 +115,15 @@ blockquote {
 	padding-left: 2rem;
 }
 
+.blue-value {
+	font-size: 2rem;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+.coreBox {
+	list-style: none;
+}
 
 
 .blue-home-1 {
@@ -252,6 +261,10 @@ textarea {
 
 .spacer {
 	margin-top: 4rem;
+}
+
+.values {
+	margin-top: 3rem;
 }
 
 
