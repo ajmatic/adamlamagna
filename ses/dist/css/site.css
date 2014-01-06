@@ -93,7 +93,6 @@ blockquote {
 	font-size: 2rem;
 	border-radius: 10px;
 	padding: 1rem;
-	margin-top: 2rem;
 }
 
 .headBox {
@@ -116,15 +115,12 @@ blockquote {
 	padding-left: 2rem;
 }
 
-.aboutBox {
-	padding-right: 4rem;
-	text-align: justify;
-}
+
 
 .blue-home-1 {
 	font-size: 2rem;
 	list-style-type: none;
-	margin-left: -3.5rem;
+	font-weight: bold;
 }
 
 footer {
@@ -175,6 +171,7 @@ footer {
 .siteText p {
 	font-family: 'Judson', serif;
 	font-size: 1.8rem;
+	padding-top: 1rem;
 }
 
 .siteText ul {
@@ -220,6 +217,9 @@ footer {
 	max-width: 100%;
 }
 
+#len{
+	padding-top: 2rem;
+}
 
 
 #home #logo {
@@ -234,7 +234,7 @@ footer {
 				2px 2px 2px #003399;
 	font-family: 'Raleway', sans-serif;
 	font-size: 5rem;
-	margin-top: 8rem;
+	margin-top: 5rem;
 }
 
 iframe {
