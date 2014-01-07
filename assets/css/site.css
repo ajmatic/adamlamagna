@@ -66,5 +66,15 @@ p.lead {
 	text-decoration: none;
 }
 
+ #skills p {
+	color: rgba(128, 3, 0, 1);
+	background-color: white;
+	border-radius: 5px;
+}
+
+#f {
+	background-color: gray;
+}
+
 
 
