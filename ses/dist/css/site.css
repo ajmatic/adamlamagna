@@ -277,6 +277,10 @@ textarea {
 	h1 {
 		font-size: 2rem;
 	}
+
+	blockquote {
+		font-size: 1.7rem;
+	}
 }
 
 
