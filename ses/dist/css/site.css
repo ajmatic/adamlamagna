@@ -100,8 +100,13 @@ blockquote {
 	padding: 1rem;
 }
 
-.mainBox li {
-	line-height: 3.9rem;
+.mainBox ul {
+	padding-left: 1.5rem;
+}
+
+.mainBox li{
+	margin-bottom: 1.75rem;	
+	list-style: none;
 }
 
 .headBox {
@@ -120,18 +125,15 @@ blockquote {
 	padding-left: 2rem;
 }
 
-
-
 .blue-value {
-	font-size: 2rem;
+	font-size: 2.3rem;
 	list-style-type: none;
 	font-weight: bold;
+	margin-bottom: 0;
 }
 
-.blue-home-1 {
-	font-size: 2rem;
-	list-style-type: none;
-	font-weight: bold;
+.blue .blue-value {
+	margin-bottom: 0;
 }
 
 footer {
