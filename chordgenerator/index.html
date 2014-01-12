@@ -1,17 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<title>Adam Lamagna</title>
+		<meta charset="UTF-8">
+		<title>Chord Generator</title>
 		<link rel="stylesheet" type="text/css" href="/css/reset.css">
-		<link rel="stylesheet" href="/chordgenerator/css/site.css" />
-		<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="/chordgenerator/css/site.css">
 	</head>
 	<body>
-		
 		<div id="header">
 			<h1>Need help starting a song?</h1>
 		</div><br><br><br>
@@ -40,48 +35,144 @@
 		<div id="output"></div>
 
 		<script type="text/javascript">
+
 			function paraChanged(){
 				var key = document.getElementById("keySelect");
 				var play = document.getElementById("playSelect");
 				var result = key.value;
 				var result2 = play.value;
 				var output = document.getElementById("output");
-				if (result == "A" && result2 == "major"){
-					output.innerHTML = "A - C - G - D";
-				} else if (result == "A" && result2 == "minor"){
-					output.innerHTML = "Am - Em - Dm - Am";
-				} else if (result == "B" && result2 == "major"){
-					output.innerHTML = "B - F# - A - E";
-				} else if (result == "B" && result2 == "minor"){
-					output.innerHTML = "Bm - G - D - Bm";
-				} else if (result == "C" && result2 == "major"){
-					output.innerHTML = "C - G - Am - F";
-				} else if (result == "C" && result2 == "minor"){
-					output.innerHTML = "Cm - G - Fm - Fm";
-				} else if (result == "D" && result2 == "major"){
-					output.innerHTML = "D - A - E - E";
-				} else if (result == "D" && result2 == "minor"){
-					output.innerHTML = "Dm - C - Am - C";
-				} else if (result == "E" && result2 == "major"){
-					output.innerHTML = "E - D - A - E";
-				} else if (result == "E" && result2 == "minor"){
-					output.innerHTML = "Em - G - Dm - C";
-				} else if (result == "F" && result2 == "major"){
-					output.innerHTML = "F - C - G - C";
-				} else if (result == "F" && result2 == "minor"){
-					output.innerHTML = "Fm - Cm - G - G";
-				} else if (result == "G" && result2 == "major"){
-					output.innerHTML = "G - D - C - G";
-				} else if(result == "G" && result2 == "minor"){
-					output.innerHTML = "Gm - F - C - Dm";
-				}
 
-				
+				var random = Math.random();
 
-			}
+				if(result == "A" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "A - E - F#m - D";
+					} else if (random <= 0.67){
+						output.innerHTML = "D - A - Bm - G";
+					} else if (random <= 1){
+						output.innerHTML = "E - B - C#m - A";
+					} 
 
+					if(result == "A" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Am - Em - F - Dm";
+					} else if (random <= 0.67){
+						output.innerHTML = "Em - Bm - C - Am";
+					} else if (random <= 1){
+						output.innerHTML = "Dm - Am - C - Gm";
+					} 
 
+					if(result == "B" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "B - F# - G#m - E";
+					} else if (random <= 0.67){
+						output.innerHTML = "F# - C# - D#m - B";
+					} else if (random <= 1){
+						output.innerHTML = "E - B - C#m - A";
+					} 
+
+					if(result == "B" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Bm - F#m - G - Em";
+					} else if (random <= 0.67){
+						output.innerHTML = "F#m - C#m - D - Bm";
+					} else if (random <= 1){
+						output.innerHTML = "Em - Bm - C - Am";
+					} 
+
+					if(result == "C" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "C - G - F -F";
+					} else if (random <= 0.67){
+						output.innerHTML = "G - D - Em - C";
+					} else if (random <= 1){
+						output.innerHTML = "F - D - Dm - Bb";
+					} 
+
+					if(result == "C" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Cm - Gm - Fm - Fm";
+					} else if (random <= 0.67){
+						output.innerHTML = "Gm - Dm - G - Cm";
+					} else if (random <= 1){
+						output.innerHTML = "Fm - Cm - Gm - D";
+					} 
+
+					if(result == "D" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "D - A - Bm - G";
+					} else if (random <= 0.67){
+						output.innerHTML = "A - E - F#m - D";
+					} else if (random <= 1){
+						output.innerHTML = "G - D - Em - C";
+					} 
+
+					if(result == "D" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Dm - Am - C - F";
+					} else if (random <= 0.67){
+						output.innerHTML = "F - C - Dm - Dm";
+					} else if (random <= 1){
+						output.innerHTML = "Gm - Dm - Cm - Dm";
+					} 
+
+					if(result == "E" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "E - B - C#m - A";
+					} else if (random <= 0.67){
+						output.innerHTML = "A - E - F#m - D";
+					} else if (random <= 1){
+						output.innerHTML = "B - F# - G#m - E";
+					} 
+
+					if(result == "E" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Em - G - Dsus - Em";
+					} else if (random <= 0.67){
+						output.innerHTML = "Bm - F#m - G - E";
+					} else if (random <= 1){
+						output.innerHTML = "Em - D - Em - G";
+					} 
+
+					if(result == "F" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "G - C - Am - F";
+					} else if (random <= 0.67){
+						output.innerHTML = "Dm - C - F - Dm";
+					} else if (random <= 1){
+						output.innerHTML = "F - C - D - Bb";
+					} 
+
+					if(result == "F" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Fm - Cm - G - G";
+					} else if (random <= 0.67){
+						output.innerHTML = "Cm - Gm - F -F";
+					} else if (random <= 1){
+						output.innerHTML = "Bb - Fm - Cm - G";
+					} 
+
+					if(result == "G" && result2 == "major")
+					if(random < 0.34) {
+						output.innerHTML = "G - Em - C - Am";
+					} else if (random <= 0.67){
+						output.innerHTML = "D - A - Bm - G";
+					} else if (random <= 1){
+						output.innerHTML = "Em - Bm - C - G";
+					} 
+
+					if(result == "G" && result2 == "minor")
+					if(random < 0.34) {
+						output.innerHTML = "Gm - F - C - Dm";
+					} else if (random <= 0.67){
+						output.innerHTML = "Dm - Am - Gm - Gm";
+					} else if (random <= 1){
+						output.innerHTML = "Cm - Gm - F - F";
+					} 
+			}	
 
 		</script>
+
 	</body>
 </html>
