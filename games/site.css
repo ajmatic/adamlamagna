@@ -1,0 +1,63 @@
+#craps1 {
+	display: inline-block;
+	float: right;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+#output {
+	background-color: red;
+	display: inline-block;
+	font-size: 3rem;
+	border-radius: 5px;
+}
+
+#output2 {
+	background-color: green;
+	display: inline-block;
+	font-size: 3rem;
+	border-radius: 5px;
+}
+
+#current {
+	font-size: 2rem;
+}
+
+#initial {
+	font-size: 2rem;
+}
+
+#play {
+	display: inline-block;
+	background-color: gray;
+	padding: 1rem;
+	border-radius: 10px;
+	font-size: 2rem;
+}
+
+#play a {
+	color: white;
+	text-decoration: none;
+}
+
+#cRoll {
+	padding-left: 1rem;
+}
+
+#iRoll {
+	padding-left: 1rem;
+}
+
+#roll {
+	padding: 1rem;
+	font-size: 1.5rem;
+	border-radius: 5px;
+}
+
+#roll2 {
+	padding: 1rem;
+	font-size: 1.5rem;
+	border-radius: 5px;
+}
