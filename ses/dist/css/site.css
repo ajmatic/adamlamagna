@@ -57,7 +57,7 @@ blockquote {
 }
 
 .navbar-default .navbar-nav li {
-	z-index: 100%;
+	z-index: 100;
 }
 
 .navbar-default .navbar-nav li li a {
