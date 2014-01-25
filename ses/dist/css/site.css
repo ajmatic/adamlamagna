@@ -56,6 +56,10 @@ blockquote {
 	font-size: 18px;
 }
 
+.navbar-default .navbar-nav li {
+	z-index: 100%;
+}
+
 .navbar-default .navbar-nav li li a {
 	color: #40402B;
 }
