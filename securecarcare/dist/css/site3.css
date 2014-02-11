@@ -1,0 +1,47 @@
+.nav-pills {
+	font-size: 1.6rem;
+	padding: .5rem;
+}
+
+.nav-pills {
+	background-color: #40402B;
+}
+
+.nav-pills li a {
+	color: white;
+}
+
+.nav-pills li a:hover {
+	color: black;
+}
+
+.navbar-default .navbar-nav li li a {
+	color: #40402B;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	color: black;
+}
+
+footer {
+	background-color: #40402B;
+	color: white;
+}
+
+#homeNumber {
+	font-size: 3rem;
+	margin-top: 3.5rem;
+}
+
+[class*="col-"] img {
+	max-width: 100%;
+}
+
+#mainImage {
+	margin-top: 2rem;
+	margin-left: -2rem;
+}
+
+#mainImage2 {
+	margin-top: 2rem;
+}

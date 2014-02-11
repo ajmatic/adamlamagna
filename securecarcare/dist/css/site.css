@@ -1,0 +1,91 @@
+body {
+	background-image: url("../../../img/light_wool.png");
+	background-repeat: repeat;
+	padding-top: 70px;
+}
+
+header {
+	background: white;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* hover navigation */
+
+/*.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown li:hover  .dropdown-menu {
+    display: block;
+}*/ 
+
+[class*="col-"] img {
+	max-width: 100%;
+}
+
+#homeText {
+	margin-top: 5rem;
+	font-size: 1.6rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+#homeText2 {
+	margin-top: 4rem;
+	font-size: 1.6rem;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+#footer {
+	background-color: rgba(221, 221, 221, 1);
+	border-top: 1px solid rgba(201, 201, 201, 1);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	min-height: 50px;
+	margin-top: 25px;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

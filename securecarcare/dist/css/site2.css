@@ -1,0 +1,19 @@
+blockquote {
+	font-size: 2.5rem;
+	font-style: italic;
+	border: none;
+}
+
+
+
+#homeText {
+	margin-top: 3rem;
+	font-size: 1.6rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+[class*="col-"] img {
+	max-width: 100%;
+}
