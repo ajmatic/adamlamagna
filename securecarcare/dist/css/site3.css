@@ -23,9 +23,31 @@
 	color: black;
 }
 
+#homeText p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.75rem;
+}
+
+#homeText {
+	padding-top: 2rem;
+}
+
 footer {
 	background-color: #40402B;
 	color: white;
+	margin-bottom: 2rem;
+}
+
+#footer1 {
+	padding-left: 1rem;
+	font-size: 2rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+#footer2 ul {
+	float: right;
+	font-size: 2rem;
+	padding-right: 1rem;
 }
 
 #homeNumber {
