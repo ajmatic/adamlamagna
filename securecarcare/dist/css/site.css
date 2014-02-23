@@ -8,9 +8,7 @@ header {
 	background: white;
 }
 
-h1 {
-	font-family: 'Raleway', sans-serif;
-}
+
 
 .navbar-nav {
 	font-family: 'Raleway', sans-serif;
@@ -44,22 +42,13 @@ h1 {
 	max-width: 100%;
 }
 
-#mainImage {
-	float: right;
-}
 
-#homeText {
-	
-	font-size: 1.6rem;
-	font-family: 'Raleway', sans-serif;
-}
-
-#homeText h1 {
-	font-family: 'Russo One', sans-serif;
-	color: #6ebb1f;
-	font-size: 5rem;
+#homeHead h1 {
 	margin-bottom: 0;
+	padding-top: 20px;
+	padding-left: 6rem;
 }
+
 
 #homeText h3 {
 	padding-top: 25px;
@@ -68,15 +57,15 @@ h1 {
 }
 
 #homeNumber {
-	padding-top: 40px;
+	padding-top: 45px;
 	font-size: 2.5rem;
 	text-align: right;
 }
 
 #homeText2 {
-	text-align: center;
+	
 	margin-top: 3rem;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -95,6 +84,35 @@ h1 {
 	margin-top: 25px;
 	display: block;
 }
+
+@media screen and (max-width: 800px) {
+	#homeNumber {
+		font-size: 2rem;
+		text-align: left;
+	}
+
+	#homeHead h1 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#homeNumber {
+		font-size: 1rem;
+		text-align: left;
+	}
+
+	#homeHead h1 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	#logo {
+		margin: 0 auto;
+	}
+}
+
+
 
 
 
