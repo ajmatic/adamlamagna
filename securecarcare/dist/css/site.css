@@ -4,9 +4,7 @@ body {
 	padding-top: 70px;
 }
 
-header {
-	background: white;
-}
+
 
 
 
@@ -92,6 +90,28 @@ header {
 	display: block;
 }
 
+@media screen and (max-width: 1200px) {
+	#homeNumber {
+		font-size: 2rem;
+		text-align: left;
+	}
+
+	#homeHead h1 {
+		font-size: 2.5rem;
+	}
+
+	#mainImage {
+	  	display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
+	#homeText2 p {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+}
+
 @media screen and (max-width: 992px) {
 	#homeNumber {
 		font-size: 2rem;
@@ -145,6 +165,12 @@ header {
 
 	#logo {
 		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
+	img #mainImage2 {
+	  	display: block;
 	  	margin-left: auto;
 	  	margin-right: auto;
 	}
