@@ -42,6 +42,10 @@ header {
 	max-width: 100%;
 }
 
+#mainImage2 {
+	float: right;
+}
+
 
 #homeHead h1 {
 	margin-bottom: 0;
@@ -63,10 +67,13 @@ header {
 }
 
 #homeText2 {
-	
 	margin-top: 3rem;
-	font-size: 1.6rem;
+	font-size: 1.75rem;
 	font-family: 'Raleway', sans-serif;
+}
+
+#homeText2 p {
+	line-height: 6rem;
 }
 
 #homeText3 {
@@ -99,6 +106,11 @@ header {
 	  	display: block;
 	  	margin-left: auto;
 	  	margin-right: auto;
+	}
+
+	#homeText2 p {
+		font-size: 1.6rem;
+		line-height: 2rem;
 	}
 }
 
