@@ -92,7 +92,7 @@ body {
 
 @media screen and (max-width: 1200px) {
 	#homeNumber {
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 
 	#homeHead h1 {
@@ -118,12 +118,15 @@ body {
 
 @media screen and (max-width: 992px) {
 	#homeNumber {
-		font-size: 2rem;
-		text-align: left;
+		font-size: 2.1rem;
+		text-align: right;
+		padding-top: 55px;
 	}
 
 	#homeHead h1 {
-		font-size: 2.3rem;
+		font-size: 2.2rem;
+		text-align: center;
+		padding-top: 35px
 	}
 
 	#mainImage {
@@ -148,12 +151,14 @@ body {
 	#homeNumber {
 		font-size: 2.3rem;
 		text-align: center;
+		padding-top: 15px;
 	}
 
 	#homeHead h1 {
 		font-size: 2.3rem;
 		text-align: center;
 		padding-left: 0;
+		padding-top: 10px;
 	}
 
 	#mainImage {
@@ -175,12 +180,14 @@ body {
 	#homeNumber {
 		font-size: 2rem;
 		text-align: center;
+		padding-top: 10px;
 	}
 
 	#homeHead h1 {
 		font-size: 2rem;
 		text-align: center;
 		padding-left: 0;
+		padding-top: 10px;
 	}
 
 	#logo {
