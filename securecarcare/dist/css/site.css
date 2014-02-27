@@ -51,13 +51,6 @@ body {
 	text-align: center;
 }
 
-
-#homeText h3 {
-	padding-top: 25px;
-	font-size: 3rem;
-	margin-bottom: 0;
-}
-
 #homeNumber {
 	padding-top: 45px;
 	font-size: 2.5rem;
@@ -78,6 +71,33 @@ body {
 	margin-top: 3rem;
 	font-size: 1.6rem;
 	font-family: 'Raleway', sans-serif;
+}
+
+#homeText3 h4 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-size: 1.9rem;
+}
+
+.btn-default {
+	font-size: 2rem;
+	background-color: #6ebb1f;
+}
+
+.btn-default:hover {
+	color: #6ebb1f;
+}
+
+#program {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#bene {
+	margin-top: 2rem;
+	margin-bottom: 0;
 }
 
 #footer {
@@ -190,6 +210,14 @@ body {
 		padding-top: 10px;
 	}
 
+	#homeText2 p {
+		font-size: 1.5rem;
+	}
+
+	#homeText3 {
+		font-size: 1.5rem;
+	}
+
 	#logo {
 		display: block;
 	  	margin-left: auto;
@@ -203,7 +231,16 @@ body {
 	  	margin-right: auto;
 	}
 
-	
+	.btn-default {
+		font-size: 1.2rem;
+	}	
+
+	#program {
+		text-align: center;
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
 }
 
 
