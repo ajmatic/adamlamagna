@@ -285,6 +285,52 @@ textarea {
 	margin-right: auto;
 }
 
+@media screen and (max-width: 1200px) {
+	#home h2 {
+		text-align: center;
+		vertical-align: middle;
+		color: #003399;
+		text-shadow: 1px 1px 1px white,
+					2px 2px 2px #003399;
+		font-family: 'Raleway', sans-serif;
+		font-size: 4.5rem;
+		margin-top: 4.5rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#home h2 {
+		text-align: center;
+		vertical-align: middle;
+		color: #003399;
+		text-shadow: 1px 1px 1px white,
+					2px 2px 2px #003399;
+		font-family: 'Raleway', sans-serif;
+		font-size: 4rem;
+		margin-top: 3rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#imgStaff {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#imgMan {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#puzzle {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	#logo {
 		width: 91px;
