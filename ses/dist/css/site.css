@@ -296,6 +296,11 @@ textarea {
 	font-family: 'Judson', serif;
 }
 
+#testHead {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1200px) {
 	#home h2 {
 		text-align: center;
