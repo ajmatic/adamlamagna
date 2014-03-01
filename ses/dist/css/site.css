@@ -301,6 +301,14 @@ textarea {
 	margin-bottom: 2rem;
 }
 
+#testHead-small {
+	text-align: center;
+}
+
+.testPara {
+	font-size: 1.6rem;
+}
+
 @media screen and (max-width: 1200px) {
 	#home h2 {
 		text-align: center;
