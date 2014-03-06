@@ -309,6 +309,10 @@ textarea {
 	font-size: 1.6rem;
 }
 
+.modal-content {
+	padding: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
 	#home h2 {
 		text-align: center;
