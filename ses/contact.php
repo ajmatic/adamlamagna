@@ -23,8 +23,8 @@ try {
     if (empty($comments)) {
       throw new Exception('Please add a comment.');
     }
-    $message = 'From '.$name."\n".$comments;
-    if (!mail($email, $subject, $message)) {
+    $message = 'Name: '.$name."\nEmail: ".$email."\nComments:\n".$comments;
+    if (!mail('sesctinfo@gmail.com', $subject, $message)) {
       throw new Exception('There was an error sending your comment. Please call us.');
     } else {
       $success = 'Contact form was successfully submitted. We will respond as soon as possible.';
