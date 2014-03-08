@@ -1,3 +1,44 @@
+<?php
+$error = null;
+$success = null;
+$name = '';
+$email = '';
+$comments = '';
+$subject = 'Contact form from website';
+try {
+  if (isset($_POST) && isset($_POST['submitted'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $comments = $_POST['comments'];
+
+    if (empty($name)) {
+      throw new Exception('Name cannot be blank.');
+    }
+    if (empty($email)) {
+      throw new Exception('Email address cannot be blank.');
+    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      throw new Exception('You entered an invalid email address.');
+    }
+    if (empty($comments)) {
+      throw new Exception('Please add a comment.');
+    }
+    $message = 'From '.$name."\n".$comments;
+    if (!mail($email, $subject, $message)) {
+      throw new Exception('There was an error sending your comment. Please call us.');
+    } else {
+      $success = 'Contact form was successfully submitted. We will respond as soon as possible.';
+      $name = '';
+      $email = '';
+      $comments = '';
+    }
+  }
+} catch(Exception $e) {
+  $error = $e->getMessage();
+}
+// echo '<pre>';
+// var_dump($_POST);
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -127,23 +168,31 @@
           <p class="num">(860)434-1270</p>
           <h3>Contact us by Email</h3>
           <p id="cap">Please let us know your thoughts and give us a chance to answer any questions you might have. We would love to hear from you!</p>
+          <?php
+            if (null !== $error) {
+              echo '<div class="bg-danger"><p class="text-danger">'.$error.'</p></div>';
+            }
+            if (null !== $success) {
+              echo '<div class="bg-success"><p class="text-success">'.$success.'</p></div>';
+            }
+          ?>
           <form class="form-horizontal" role="form" action="contact.php" method="post">
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEmail3" name="name" placeholder="Name">
+                <input type="text" class="form-control" id="inputEmail3" name="name" placeholder="Name" value="<?php echo $name; ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email" value="<?php echo $email; ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="comments" class="col-sm-2 control-label">Comments</label>
               <div class="col-sm-10">
-                <textarea class="form-control" rows="3" name="comments" placeholder="Comments"></textarea>
+                <textarea class="form-control" rows="3" name="comments" placeholder="Comments"><?php echo $comments; ?></textarea>
               </div>
             </div>
             <div class="form-group">
