@@ -247,8 +247,15 @@ body {
 		padding-top: 10px;
 	}
 
-	#homeText2 p {
-		font-size: 1.5rem;
+	#homeText2 {
+		height: 100px;
+		margin-top: 0;
+		margin-bottom: 3rem;
+	}
+
+	#myHeader {
+		text-align: center;
+		font-size: 1.7rem;
 	}
 
 	#homeText3 {
@@ -266,7 +273,7 @@ body {
 	  	display: block;
 	  	margin-left: auto;
 	  	margin-right: auto;
-	}
+	}	
 
 	.btn-default {
 		font-size: 1.2rem;
