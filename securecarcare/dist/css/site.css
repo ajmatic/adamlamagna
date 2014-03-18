@@ -128,6 +128,20 @@ body {
 	margin-top: 2rem;
 }
 
+.modal-content {
+	padding: 1rem;
+}
+
+.btn-primary {
+	font-size: 2rem;
+	background-color: #6ebb1f;
+}
+
+.btn-group-justified:hover {
+	color: #6ebb1f;
+	background-color: white;
+}
+
 #footer {
 	background-color: rgba(221, 221, 221, 1);
 	border-top: 1px solid rgba(201, 201, 201, 1);
